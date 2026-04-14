@@ -1041,6 +1041,71 @@ body[data-theme="classic"] .theme-pill.active {
 }
 </style>
 
+
+<style>
+/* Mobile calendar usability improvements */
+@media (max-width: 720px) {
+  .calendar-frame {
+    padding: 10px !important;
+  }
+
+  #calendar {
+    min-height: 560px;
+  }
+
+  .fc .fc-daygrid-day-frame {
+    min-height: 110px !important;
+  }
+
+  .fc-daygrid-event,
+  .fc-list-event {
+    padding: 8px 8px !important;
+    margin: 6px 0 !important;
+    border-radius: 12px !important;
+  }
+
+  .event-card-title {
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 6px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .event-card-meta {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    margin-top: 6px !important;
+    padding-top: 6px !important;
+  }
+
+  .badge-row {
+    gap: 4px !important;
+  }
+
+  .badge {
+    font-size: 10px !important;
+    padding: 2px 7px !important;
+  }
+
+  /* Make month view horizontally scroll instead of crushing columns */
+  .fc .fc-view-harness,
+  .fc .fc-scrollgrid {
+    min-width: 760px;
+  }
+
+  .calendar-frame {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Keep list/day views comfortable on mobile */
+  .fc .fc-list-event-title,
+  .fc .fc-list-event-time {
+    font-size: 13px !important;
+  }
+}
+</style>
+
 </head>
 <body>
   <div class="app-shell">
@@ -1263,6 +1328,26 @@ body[data-theme="classic"] .theme-pill.active {
       if (mode === 'day') return 'listDay';
       if (mode === 'month') return 'dayGridMonth';
       return 'dayGridWeek';
+    }
+
+    function getResponsiveDefaultView() {
+      return window.innerWidth <= 720 ? 'listWeek' : 'dayGridWeek';
+    }
+
+    function applyResponsiveViewOnLoad() {
+      if (!calendar) return;
+      const currentView = calendar.view ? calendar.view.type : '';
+      if (!currentView) {
+        calendar.changeView(getResponsiveDefaultView());
+        updateViewButtons();
+        return;
+      }
+      if (window.innerWidth <= 720 && (currentView === 'dayGridWeek' || currentView === 'dayGridMonth')) {
+        calendar.changeView('listWeek');
+      } else if (window.innerWidth > 720 && currentView === 'listWeek') {
+        calendar.changeView('dayGridWeek');
+      }
+      updateViewButtons();
     }
 
     function updateViewButtons() {
@@ -1698,6 +1783,12 @@ body[data-theme="classic"] .theme-pill.active {
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape') {
         closeDetailModal();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (calendar) {
+        applyResponsiveViewOnLoad();
       }
     });
 
