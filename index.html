@@ -3435,6 +3435,1516 @@ body[data-theme="glass"] .fc .fc-scrollgrid-sync-table tbody tr:last-child td:la
 }
 </style>
 
+
+
+<style id="star-trek-theme">
+/* Star Trek theme - starship bridge */
+body[data-theme="startrek"] {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255,255,255,0.05), transparent 16%),
+    radial-gradient(circle at 82% 12%, rgba(96,165,250,0.10), transparent 18%),
+    radial-gradient(circle at 18% 18%, rgba(245,158,11,0.08), transparent 20%),
+    linear-gradient(180deg, #04070d 0%, #0a0f18 42%, #111827 100%) !important;
+  color: #eef4fb !important;
+}
+
+body[data-theme="startrek"] .topbar {
+  background:
+    linear-gradient(180deg, rgba(18,22,31,0.98) 0%, rgba(12,16,24,0.99) 100%) !important;
+  border: 1px solid rgba(148,163,184,0.18) !important;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.42) !important;
+}
+
+body[data-theme="startrek"] .filters-panel,
+body[data-theme="startrek"] .calendar-card,
+body[data-theme="startrek"] .empty-state,
+body[data-theme="startrek"] .modal-card {
+  background:
+    linear-gradient(180deg, rgba(20,24,34,0.98) 0%, rgba(13,17,25,0.99) 100%) !important;
+  border: 1px solid rgba(148,163,184,0.16) !important;
+  box-shadow: 0 16px 34px rgba(0,0,0,0.34) !important;
+}
+
+body[data-theme="startrek"] .filters-inner,
+body[data-theme="startrek"] .calendar-frame,
+body[data-theme="startrek"] .filter-card {
+  background:
+    linear-gradient(180deg, rgba(28,33,45,0.95) 0%, rgba(18,23,33,0.98) 100%) !important;
+  border-color: rgba(148,163,184,0.14) !important;
+}
+
+body[data-theme="startrek"] .app-title,
+body[data-theme="startrek"] .modal-title,
+body[data-theme="startrek"] .event-card-title,
+body[data-theme="startrek"] .fc .fc-col-header-cell-cushion,
+body[data-theme="startrek"] .fc .fc-daygrid-day-number,
+body[data-theme="startrek"] .fc .fc-list-day-text,
+body[data-theme="startrek"] .fc .fc-list-day-side-text {
+  color: #f8fbff !important;
+}
+
+body[data-theme="startrek"] .subtext,
+body[data-theme="startrek"] .summary-text,
+body[data-theme="startrek"] .helper-line,
+body[data-theme="startrek"] .event-card-meta,
+body[data-theme="startrek"] .detail-grid .label {
+  color: rgba(220,230,240,0.82) !important;
+}
+
+/* Controls: bridge panel feel */
+body[data-theme="startrek"] .btn,
+body[data-theme="startrek"] .file-input-label,
+body[data-theme="startrek"] .theme-trigger {
+  background: linear-gradient(180deg, #243041 0%, #1b2433 100%) !important;
+  color: #eef4fb !important;
+  border: 1px solid rgba(148,163,184,0.20) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04) !important;
+}
+
+body[data-theme="startrek"] .btn:hover,
+body[data-theme="startrek"] .file-input-label:hover,
+body[data-theme="startrek"] .theme-trigger:hover {
+  background: linear-gradient(180deg, #2b3950 0%, #202a3a 100%) !important;
+  border-color: rgba(148,163,184,0.28) !important;
+}
+
+/* Primary controls: amber command accent */
+body[data-theme="startrek"] .btn-primary,
+body[data-theme="startrek"] .btn-active {
+  background: linear-gradient(180deg, #f6b84c 0%, #e78b2d 100%) !important;
+  color: #12161d !important;
+  border-color: rgba(245,158,11,0.55) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.18) !important;
+}
+
+body[data-theme="startrek"] .status-pill {
+  background: rgba(255,255,255,0.05) !important;
+  color: #eef4fb !important;
+  border-color: rgba(148,163,184,0.16) !important;
+}
+
+/* Theme menu */
+body[data-theme="startrek"] .theme-popover,
+body[data-theme="startrek"] .theme-menu-overlay-fixed,
+body[data-theme="startrek"] #themeMenuPortal {
+  background: linear-gradient(180deg, rgba(22,27,38,0.98) 0%, rgba(14,18,27,0.99) 100%) !important;
+  border: 1px solid rgba(148,163,184,0.18) !important;
+  box-shadow: 0 18px 34px rgba(0,0,0,0.46) !important;
+}
+
+body[data-theme="startrek"] .theme-option,
+body[data-theme="startrek"] .theme-menu-overlay-fixed button,
+body[data-theme="startrek"] #themeMenuPortal button {
+  color: #eef4fb !important;
+  background: transparent !important;
+}
+
+body[data-theme="startrek"] .theme-option:hover,
+body[data-theme="startrek"] .theme-option.active,
+body[data-theme="startrek"] .theme-menu-overlay-fixed button:hover,
+body[data-theme="startrek"] .theme-menu-overlay-fixed button.active,
+body[data-theme="startrek"] #themeMenuPortal button:hover,
+body[data-theme="startrek"] #themeMenuPortal button.active {
+  background: rgba(246,184,76,0.16) !important;
+}
+
+body[data-theme="startrek"] .theme-option-check {
+  color: #f6b84c !important;
+}
+
+/* Calendar */
+body[data-theme="startrek"] .fc {
+  --fc-border-color: rgba(148,163,184,0.12);
+  --fc-page-bg-color: transparent;
+  --fc-neutral-bg-color: rgba(26,32,44,0.92);
+  --fc-today-bg-color: rgba(245,158,11,0.08);
+  color: #eef4fb;
+}
+
+body[data-theme="startrek"] .fc .fc-scrollgrid,
+body[data-theme="startrek"] .fc .fc-theme-standard td,
+body[data-theme="startrek"] .fc .fc-theme-standard th {
+  border-color: rgba(148,163,184,0.12) !important;
+}
+
+body[data-theme="startrek"] .fc .fc-scrollgrid,
+body[data-theme="startrek"] .fc .fc-col-header-cell,
+body[data-theme="startrek"] .fc .fc-list-day-cushion,
+body[data-theme="startrek"] .fc .fc-daygrid-day-frame {
+  background: linear-gradient(180deg, rgba(29,35,48,0.94) 0%, rgba(20,25,35,0.98) 100%) !important;
+}
+
+body[data-theme="startrek"] .fc-daygrid-event,
+body[data-theme="startrek"] .fc-list-event {
+  background: linear-gradient(180deg, rgba(82,97,121,0.30) 0%, rgba(63,77,98,0.24) 100%) !important;
+  border-color: rgba(255,255,255,0.12) !important;
+}
+
+/* A subtle starfleet-like accent line */
+body[data-theme="startrek"] .calendar-card {
+  position: relative;
+}
+body[data-theme="startrek"] .calendar-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(0,0,0,0), rgba(246,184,76,0.75), rgba(125,211,252,0.55), rgba(0,0,0,0));
+  pointer-events: none;
+  z-index: 2;
+}
+</style>
+
+
+
+<style id="startrek-upgrade-preview">
+body[data-theme="startrek"] {
+  --accent-blue: #60a5fa;
+  --accent-cyan: #22d3ee;
+  --accent-amber: #f6b84c;
+}
+
+body[data-theme="startrek"] .calendar-card {
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+body[data-theme="startrek"] .fc-daygrid-day:hover {
+  background: rgba(96,165,250,0.08) !important;
+}
+
+body[data-theme="startrek"] .fc .fc-day-today {
+  background: rgba(34,211,238,0.10) !important;
+}
+
+body[data-theme="startrek"] .fc,
+body[data-theme="startrek"] .filters-panel,
+body[data-theme="startrek"] .calendar-card {
+  border-color: rgba(96,165,250,0.18) !important;
+}
+
+body[data-theme="startrek"] .filters-inner,
+body[data-theme="startrek"] .calendar-frame {
+  background: linear-gradient(180deg, #1b2433 0%, #141b26 100%) !important;
+}
+
+body[data-theme="startrek"] .subtext,
+body[data-theme="startrek"] .event-card-meta {
+  color: rgba(180,200,220,0.75) !important;
+}
+</style>
+
+
+<style id="star-trek-red-alert">
+/* Star Trek - Red Alert theme */
+body[data-theme="redalert"] {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255,0,0,0.12), transparent 20%),
+    radial-gradient(circle at 80% 10%, rgba(255,60,60,0.18), transparent 25%),
+    linear-gradient(180deg, #050000 0%, #120000 45%, #1a0000 100%);
+  color: #ffeaea;
+}
+
+/* top bar */
+body[data-theme="redalert"] .topbar {
+  background: linear-gradient(180deg, #1a0000 0%, #0d0000 100%);
+  border: 1px solid rgba(255,80,80,0.35);
+  box-shadow: 0 0 20px rgba(255,0,0,0.25);
+}
+
+/* panels */
+body[data-theme="redalert"] .filters-panel,
+body[data-theme="redalert"] .calendar-card,
+body[data-theme="redalert"] .modal-card {
+  background: linear-gradient(180deg, #1a0000 0%, #0f0000 100%);
+  border: 1px solid rgba(255,80,80,0.25);
+  box-shadow: 0 0 25px rgba(255,0,0,0.18);
+}
+
+/* inner surfaces */
+body[data-theme="redalert"] .filters-inner,
+body[data-theme="redalert"] .calendar-frame {
+  background: linear-gradient(180deg, #220000 0%, #140000 100%);
+}
+
+/* text hierarchy */
+body[data-theme="redalert"] .app-title,
+body[data-theme="redalert"] .modal-title {
+  color: #ffffff;
+}
+
+body[data-theme="redalert"] .subtext,
+body[data-theme="redalert"] .event-card-meta {
+  color: rgba(255,200,200,0.75);
+}
+
+/* buttons */
+body[data-theme="redalert"] .btn,
+body[data-theme="redalert"] .file-input-label,
+body[data-theme="redalert"] .theme-trigger {
+  background: linear-gradient(180deg, #330000 0%, #1a0000 100%);
+  border: 1px solid rgba(255,80,80,0.35);
+  color: #ffeaea;
+}
+
+body[data-theme="redalert"] .btn:hover {
+  background: linear-gradient(180deg, #4a0000 0%, #260000 100%);
+}
+
+/* primary actions pulse */
+@keyframes alertPulse {
+  0% { box-shadow: 0 0 0 rgba(255,0,0,0.0); }
+  50% { box-shadow: 0 0 18px rgba(255,0,0,0.6); }
+  100% { box-shadow: 0 0 0 rgba(255,0,0,0.0); }
+}
+
+body[data-theme="redalert"] .btn-primary,
+body[data-theme="redalert"] .btn-active {
+  background: linear-gradient(180deg, #ff3b3b 0%, #a80000 100%);
+  color: #fff;
+  border: none;
+  animation: alertPulse 2s infinite;
+}
+
+/* calendar */
+body[data-theme="redalert"] .fc {
+  --fc-border-color: rgba(255,80,80,0.2);
+  --fc-today-bg-color: rgba(255,0,0,0.15);
+  color: #ffeaea;
+}
+
+body[data-theme="redalert"] .fc-daygrid-day:hover {
+  background: rgba(255,0,0,0.08);
+}
+
+body[data-theme="redalert"] .fc .fc-daygrid-day-frame {
+  background: rgba(255,0,0,0.03);
+}
+
+/* events */
+body[data-theme="redalert"] .fc-daygrid-event {
+  background: linear-gradient(180deg, rgba(255,80,80,0.45), rgba(180,0,0,0.45));
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* theme menu */
+body[data-theme="redalert"] .theme-popover,
+body[data-theme="redalert"] #themeMenuPortal {
+  background: #140000;
+  border: 1px solid rgba(255,80,80,0.35);
+}
+
+body[data-theme="redalert"] .theme-option:hover,
+body[data-theme="redalert"] #themeMenuPortal button:hover {
+  background: rgba(255,0,0,0.2);
+}
+</style>
+
+
+<style id="redalert-hard-override-final">
+body[data-theme="redalert"] {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255,0,0,0.16), transparent 22%),
+    radial-gradient(circle at 82% 10%, rgba(255,40,40,0.20), transparent 24%),
+    linear-gradient(180deg, #030000 0%, #120000 52%, #1b0000 100%) !important;
+  color: #ffeaea !important;
+}
+
+body[data-theme="redalert"] .topbar {
+  background: linear-gradient(180deg, rgba(34,0,0,0.98) 0%, rgba(16,0,0,0.99) 100%) !important;
+  border: 1px solid rgba(255,70,70,0.42) !important;
+  box-shadow: 0 0 0 1px rgba(255,50,50,0.18), 0 18px 42px rgba(0,0,0,0.46) !important;
+}
+
+body[data-theme="redalert"] .filters-panel,
+body[data-theme="redalert"] .calendar-card,
+body[data-theme="redalert"] .empty-state,
+body[data-theme="redalert"] .modal-card {
+  background: linear-gradient(180deg, rgba(32,0,0,0.98) 0%, rgba(18,0,0,0.99) 100%) !important;
+  border: 1px solid rgba(255,70,70,0.28) !important;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.38) !important;
+}
+
+body[data-theme="redalert"] .filters-inner,
+body[data-theme="redalert"] .calendar-frame,
+body[data-theme="redalert"] .filter-card {
+  background: linear-gradient(180deg, rgba(44,0,0,0.94) 0%, rgba(22,0,0,0.98) 100%) !important;
+  border-color: rgba(255,70,70,0.20) !important;
+}
+
+body[data-theme="redalert"] .app-title,
+body[data-theme="redalert"] .modal-title,
+body[data-theme="redalert"] .event-card-title,
+body[data-theme="redalert"] .fc .fc-col-header-cell-cushion,
+body[data-theme="redalert"] .fc .fc-daygrid-day-number,
+body[data-theme="redalert"] .fc .fc-list-day-text,
+body[data-theme="redalert"] .fc .fc-list-day-side-text,
+body[data-theme="redalert"] .fc .fc-list-event-time,
+body[data-theme="redalert"] .fc .fc-list-event-title,
+body[data-theme="redalert"] .fc-event,
+body[data-theme="redalert"] .fc-event * {
+  color: #fff3f3 !important;
+}
+
+body[data-theme="redalert"] .subtext,
+body[data-theme="redalert"] .summary-text,
+body[data-theme="redalert"] .helper-line,
+body[data-theme="redalert"] .event-card-meta,
+body[data-theme="redalert"] .detail-grid .label {
+  color: rgba(255,210,210,0.82) !important;
+}
+
+body[data-theme="redalert"] .btn,
+body[data-theme="redalert"] .file-input-label,
+body[data-theme="redalert"] .theme-trigger {
+  background: linear-gradient(180deg, rgba(68,0,0,0.96) 0%, rgba(30,0,0,0.99) 100%) !important;
+  color: #ffeaea !important;
+  border: 1px solid rgba(255,90,90,0.34) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05) !important;
+}
+
+body[data-theme="redalert"] .btn:hover,
+body[data-theme="redalert"] .file-input-label:hover,
+body[data-theme="redalert"] .theme-trigger:hover {
+  background: linear-gradient(180deg, rgba(92,0,0,0.96) 0%, rgba(40,0,0,0.99) 100%) !important;
+}
+
+body[data-theme="redalert"] .btn-primary,
+body[data-theme="redalert"] .btn-active {
+  background: linear-gradient(180deg, #ff4d4d 0%, #b10000 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255,120,120,0.36) !important;
+}
+
+body[data-theme="redalert"] .status-pill {
+  background: rgba(255,255,255,0.06) !important;
+  color: #ffeaea !important;
+  border-color: rgba(255,100,100,0.22) !important;
+}
+
+body[data-theme="redalert"] .theme-popover,
+body[data-theme="redalert"] .theme-menu-overlay-fixed,
+body[data-theme="redalert"] #themeMenuPortal {
+  background: linear-gradient(180deg, rgba(26,0,0,0.98) 0%, rgba(14,0,0,0.99) 100%) !important;
+  border: 1px solid rgba(255,90,90,0.32) !important;
+}
+
+body[data-theme="redalert"] .theme-option,
+body[data-theme="redalert"] .theme-menu-overlay-fixed button,
+body[data-theme="redalert"] #themeMenuPortal button {
+  color: #ffeaea !important;
+  background: transparent !important;
+}
+
+body[data-theme="redalert"] .theme-option:hover,
+body[data-theme="redalert"] .theme-option.active,
+body[data-theme="redalert"] .theme-menu-overlay-fixed button:hover,
+body[data-theme="redalert"] .theme-menu-overlay-fixed button.active,
+body[data-theme="redalert"] #themeMenuPortal button:hover,
+body[data-theme="redalert"] #themeMenuPortal button.active {
+  background: rgba(255,0,0,0.22) !important;
+}
+
+body[data-theme="redalert"] .fc {
+  --fc-border-color: rgba(255,90,90,0.18) !important;
+  --fc-page-bg-color: transparent !important;
+  --fc-neutral-bg-color: rgba(32,0,0,0.90) !important;
+  --fc-today-bg-color: rgba(255,0,0,0.16) !important;
+  color: #ffeaea !important;
+}
+
+body[data-theme="redalert"] .fc .fc-scrollgrid,
+body[data-theme="redalert"] .fc .fc-theme-standard td,
+body[data-theme="redalert"] .fc .fc-theme-standard th {
+  border-color: rgba(255,90,90,0.18) !important;
+}
+
+body[data-theme="redalert"] .fc .fc-scrollgrid,
+body[data-theme="redalert"] .fc .fc-col-header-cell,
+body[data-theme="redalert"] .fc .fc-list-day-cushion,
+body[data-theme="redalert"] .fc .fc-daygrid-day-frame {
+  background: linear-gradient(180deg, rgba(46,0,0,0.90) 0%, rgba(24,0,0,0.96) 100%) !important;
+}
+
+body[data-theme="redalert"] .fc-daygrid-day:hover {
+  background: rgba(255,0,0,0.10) !important;
+}
+
+body[data-theme="redalert"] .fc-daygrid-event,
+body[data-theme="redalert"] .fc-list-event,
+body[data-theme="redalert"] .fc .fc-timegrid-event,
+body[data-theme="redalert"] .fc .fc-timegrid-event .fc-event-main {
+  background: linear-gradient(180deg, rgba(255,92,92,0.34) 0%, rgba(156,0,0,0.38) 100%) !important;
+  border-color: rgba(255,255,255,0.16) !important;
+}
+</style>
+
+
+<style id="startrek-dedicated-layout">
+/* Star Trek dedicated layout mode */
+body[data-theme="startrek"] #appContent {
+  display: grid !important;
+  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "sidebar main"
+    "filters main";
+  gap: 18px;
+  align-items: start;
+}
+
+body[data-theme="startrek"] .topbar {
+  grid-area: sidebar !important;
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  min-height: 260px;
+  padding: 18px 18px 20px !important;
+  border-radius: 34px 18px 34px 18px !important;
+  position: sticky;
+  top: 16px;
+  overflow: hidden !important;
+}
+
+body[data-theme="startrek"] .topbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(245,158,11,0.82) 0, rgba(245,158,11,0.82) 22px, transparent 22px),
+    linear-gradient(180deg, rgba(245,158,11,0.20), transparent 55%),
+    linear-gradient(180deg, rgba(36,33,63,0.18), transparent 100%);
+  opacity: 0.78;
+  pointer-events: none;
+}
+
+body[data-theme="startrek"] .topbar::after {
+  content: '';
+  position: absolute;
+  right: 18px;
+  top: 0;
+  width: 96px;
+  height: 100%;
+  background:
+    linear-gradient(180deg, rgba(245,158,11,0.92) 0%, rgba(245,158,11,0.76) 28%, rgba(245,158,11,0.20) 28%, rgba(245,158,11,0.20) 100%);
+  border-bottom-left-radius: 54px;
+  opacity: 0.88;
+  pointer-events: none;
+}
+
+body[data-theme="startrek"] .topbar-row {
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+}
+
+body[data-theme="startrek"] .title-wrap {
+  gap: 4px !important;
+  padding-right: 84px;
+}
+
+body[data-theme="startrek"] .app-title {
+  font-size: 28px !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.03em !important;
+  text-wrap: balance;
+}
+
+body[data-theme="startrek"] .toolbar-group {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px !important;
+  align-items: stretch !important;
+}
+
+body[data-theme="startrek"] .toolbar-group .segmented {
+  grid-column: 1 / -1;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px !important;
+  padding: 6px !important;
+  border-radius: 26px 14px 26px 14px !important;
+}
+
+body[data-theme="startrek"] .toolbar-group .segmented .btn {
+  width: 100% !important;
+}
+
+body[data-theme="startrek"] .btn,
+body[data-theme="startrek"] .file-input-label,
+body[data-theme="startrek"] .status-pill,
+body[data-theme="startrek"] .theme-trigger {
+  border-radius: 22px 10px 22px 10px !important;
+  min-height: 40px !important;
+  font-weight: 700 !important;
+}
+
+body[data-theme="startrek"] .status-pill {
+  justify-content: flex-start !important;
+}
+
+body[data-theme="startrek"] .filters-panel {
+  grid-area: filters !important;
+  display: block !important;
+  margin: 0 !important;
+  border-radius: 18px 34px 18px 34px !important;
+  overflow: hidden !important;
+}
+
+body[data-theme="startrek"] .filters-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(180,83,9,0.18), transparent 25%),
+    linear-gradient(90deg, rgba(196,181,253,0.20) 0, rgba(196,181,253,0.20) 14px, transparent 14px);
+  pointer-events: none;
+}
+
+body[data-theme="startrek"] .filters-panel.open .filters-inner,
+body[data-theme="startrek"] .filters-inner {
+  display: block !important;
+}
+
+body[data-theme="startrek"] .filters-inner {
+  padding: 16px !important;
+}
+
+body[data-theme="startrek"] .filters-grid {
+  grid-template-columns: 1fr !important;
+  gap: 12px !important;
+}
+
+body[data-theme="startrek"] .filter-card {
+  border-radius: 18px 10px 18px 10px !important;
+}
+
+body[data-theme="startrek"] .filters-footer {
+  display: none !important;
+}
+
+body[data-theme="startrek"] #toggleFiltersBtn {
+  display: none !important;
+}
+
+body[data-theme="startrek"] .calendar-card {
+  grid-area: main !important;
+  margin: 0 !important;
+  min-height: 760px;
+  border-radius: 44px 18px 44px 18px !important;
+  overflow: hidden !important;
+  position: relative;
+}
+
+body[data-theme="startrek"] .calendar-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 26px;
+  background:
+    linear-gradient(90deg,
+      rgba(245,158,11,0.95) 0%,
+      rgba(245,158,11,0.95) 16%,
+      rgba(196,181,253,0.92) 16%,
+      rgba(196,181,253,0.92) 30%,
+      rgba(245,158,11,0.88) 30%,
+      rgba(245,158,11,0.88) 56%,
+      rgba(244,114,182,0.88) 56%,
+      rgba(244,114,182,0.88) 68%,
+      rgba(245,158,11,0.88) 68%,
+      rgba(245,158,11,0.88) 100%);
+  pointer-events: none;
+  z-index: 3;
+}
+
+body[data-theme="startrek"] .calendar-frame {
+  padding-top: 34px !important;
+}
+
+/* LCARS-inspired palette */
+body[data-theme="startrek"] {
+  background:
+    radial-gradient(circle at 22% 8%, rgba(245,158,11,0.10), transparent 16%),
+    radial-gradient(circle at 82% 8%, rgba(196,181,253,0.10), transparent 16%),
+    linear-gradient(180deg, #09070c 0%, #13111a 52%, #0f0d14 100%) !important;
+  color: #f6e5d1 !important;
+}
+
+body[data-theme="startrek"] .topbar,
+body[data-theme="startrek"] .filters-panel,
+body[data-theme="startrek"] .calendar-card,
+body[data-theme="startrek"] .empty-state,
+body[data-theme="startrek"] .modal-card {
+  background: linear-gradient(180deg, #201924 0%, #161119 100%) !important;
+  border: 2px solid rgba(245,158,11,0.28) !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.34) !important;
+}
+
+body[data-theme="startrek"] .filters-inner,
+body[data-theme="startrek"] .calendar-frame,
+body[data-theme="startrek"] .filter-card {
+  background: linear-gradient(180deg, #2a2130 0%, #1a141d 100%) !important;
+  border-color: rgba(196,181,253,0.20) !important;
+}
+
+body[data-theme="startrek"] .app-title,
+body[data-theme="startrek"] .modal-title,
+body[data-theme="startrek"] .event-card-title,
+body[data-theme="startrek"] .fc .fc-col-header-cell-cushion,
+body[data-theme="startrek"] .fc .fc-daygrid-day-number,
+body[data-theme="startrek"] .fc .fc-list-day-text,
+body[data-theme="startrek"] .fc .fc-list-day-side-text {
+  color: #f8e6d2 !important;
+}
+
+body[data-theme="startrek"] .subtext,
+body[data-theme="startrek"] .summary-text,
+body[data-theme="startrek"] .helper-line,
+body[data-theme="startrek"] .event-card-meta,
+body[data-theme="startrek"] .detail-grid .label {
+  color: rgba(248,230,210,0.78) !important;
+}
+
+body[data-theme="startrek"] .btn,
+body[data-theme="startrek"] .file-input-label,
+body[data-theme="startrek"] .theme-trigger {
+  background: linear-gradient(180deg, #d97706 0%, #b45309 100%) !important;
+  color: #190f11 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+body[data-theme="startrek"] .btn:hover,
+body[data-theme="startrek"] .file-input-label:hover,
+body[data-theme="startrek"] .theme-trigger:hover {
+  filter: brightness(1.06);
+}
+
+body[data-theme="startrek"] .btn-primary,
+body[data-theme="startrek"] .btn-active {
+  background: linear-gradient(180deg, #c4b5fd 0%, #a78bfa 100%) !important;
+  color: #1b1230 !important;
+}
+
+body[data-theme="startrek"] .status-pill {
+  background: linear-gradient(180deg, #f472b6 0%, #ec4899 100%) !important;
+  color: #2a1020 !important;
+  border: none !important;
+}
+
+body[data-theme="startrek"] .segmented {
+  background: rgba(0,0,0,0.18) !important;
+  border: 2px solid rgba(245,158,11,0.24) !important;
+}
+
+body[data-theme="startrek"] .theme-popover,
+body[data-theme="startrek"] .theme-menu-overlay-fixed,
+body[data-theme="startrek"] #themeMenuPortal {
+  background: linear-gradient(180deg, #241b28 0%, #161018 100%) !important;
+  border: 2px solid rgba(245,158,11,0.26) !important;
+}
+
+body[data-theme="startrek"] .theme-option,
+body[data-theme="startrek"] .theme-menu-overlay-fixed button,
+body[data-theme="startrek"] #themeMenuPortal button {
+  color: #f8e6d2 !important;
+}
+
+body[data-theme="startrek"] .theme-option:hover,
+body[data-theme="startrek"] .theme-option.active,
+body[data-theme="startrek"] .theme-menu-overlay-fixed button:hover,
+body[data-theme="startrek"] .theme-menu-overlay-fixed button.active,
+body[data-theme="startrek"] #themeMenuPortal button:hover,
+body[data-theme="startrek"] #themeMenuPortal button.active {
+  background: rgba(196,181,253,0.22) !important;
+}
+
+body[data-theme="startrek"] .theme-option-check {
+  color: #f8b4d9 !important;
+}
+
+body[data-theme="startrek"] .filter-label {
+  color: #f8e6d2 !important;
+  letter-spacing: 0.04em !important;
+}
+
+body[data-theme="startrek"] select[multiple] {
+  background: #120d13 !important;
+  color: #f8e6d2 !important;
+  border: 1px solid rgba(196,181,253,0.22) !important;
+}
+
+body[data-theme="startrek"] .fc {
+  --fc-border-color: rgba(196,181,253,0.18) !important;
+  --fc-page-bg-color: transparent !important;
+  --fc-neutral-bg-color: rgba(42,33,48,0.94) !important;
+  --fc-today-bg-color: rgba(244,114,182,0.12) !important;
+  color: #f8e6d2 !important;
+}
+
+body[data-theme="startrek"] .fc .fc-scrollgrid,
+body[data-theme="startrek"] .fc .fc-theme-standard td,
+body[data-theme="startrek"] .fc .fc-theme-standard th {
+  border-color: rgba(196,181,253,0.18) !important;
+}
+
+body[data-theme="startrek"] .fc .fc-scrollgrid,
+body[data-theme="startrek"] .fc .fc-col-header-cell,
+body[data-theme="startrek"] .fc .fc-list-day-cushion,
+body[data-theme="startrek"] .fc .fc-daygrid-day-frame {
+  background: linear-gradient(180deg, rgba(55,42,63,0.94) 0%, rgba(29,22,33,0.98) 100%) !important;
+}
+
+body[data-theme="startrek"] .fc-daygrid-event,
+body[data-theme="startrek"] .fc-list-event,
+body[data-theme="startrek"] .fc .fc-timegrid-event,
+body[data-theme="startrek"] .fc .fc-timegrid-event .fc-event-main {
+  background: linear-gradient(180deg, rgba(196,181,253,0.22) 0%, rgba(244,114,182,0.16) 100%) !important;
+  border: 1px solid rgba(245,158,11,0.24) !important;
+}
+
+@media (max-width: 980px) {
+  body[data-theme="startrek"] #appContent {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "sidebar"
+      "filters"
+      "main";
+  }
+
+  body[data-theme="startrek"] .topbar {
+    position: static !important;
+    min-height: 0;
+  }
+
+  body[data-theme="startrek"] .toolbar-group {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+</style>
+
+
+<style id="startrek-filter-and-segment-fix">
+/* Star Trek: keep filter selections visibly highlighted across focus changes */
+body[data-theme="startrek"] select[multiple] {
+  background: #120d13 !important;
+  color: #f8e6d2 !important;
+  border: 1px solid rgba(196,181,253,0.22) !important;
+}
+
+body[data-theme="startrek"] select[multiple] option {
+  background: #120d13 !important;
+  color: #f8e6d2 !important;
+}
+
+body[data-theme="startrek"] select[multiple] option:checked,
+body[data-theme="startrek"] select[multiple] option[selected] {
+  background: linear-gradient(180deg, #c4b5fd 0%, #a78bfa 100%) !important;
+  color: #1b1230 !important;
+}
+
+body[data-theme="startrek"] select[multiple]:focus option:checked,
+body[data-theme="startrek"] select[multiple]:focus option[selected],
+body[data-theme="startrek"] select[multiple]:focus-visible option:checked,
+body[data-theme="startrek"] select[multiple]:focus-visible option[selected] {
+  background: linear-gradient(180deg, #f472b6 0%, #ec4899 100%) !important;
+  color: #2a1020 !important;
+}
+
+/* Star Trek: stop Day/Week/Month segment from layering over neighboring controls */
+body[data-theme="startrek"] .topbar {
+  overflow: visible !important;
+}
+
+body[data-theme="startrek"] .topbar-row,
+body[data-theme="startrek"] .toolbar-group,
+body[data-theme="startrek"] .segmented {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+body[data-theme="startrek"] .toolbar-group {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 8px !important;
+  align-items: stretch !important;
+}
+
+body[data-theme="startrek"] .toolbar-group .segmented {
+  grid-column: 1 / -1 !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  width: 100% !important;
+  gap: 6px !important;
+  padding: 6px !important;
+  margin-top: 2px !important;
+  border-radius: 26px 14px 26px 14px !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+body[data-theme="startrek"] .toolbar-group .segmented .btn,
+body[data-theme="startrek"] .view-btn {
+  min-width: 0 !important;
+  width: 100% !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+body[data-theme="startrek"] .btn,
+body[data-theme="startrek"] .file-input-label,
+body[data-theme="startrek"] .status-pill,
+body[data-theme="startrek"] .theme-trigger {
+  min-width: 0 !important;
+}
+
+/* A bit more spacing between title area and controls in sidebar */
+body[data-theme="startrek"] .title-wrap {
+  margin-bottom: 4px !important;
+}
+</style>
+
+
+<style id="startrek-filter-visibility-and-toolbar-layout-v3">
+/* Stronger, persistent multi-select visibility in Star Trek */
+body[data-theme="startrek"] select[multiple] {
+  background: #120d13 !important;
+  color: #f8e6d2 !important;
+  border: 1px solid rgba(196,181,253,0.24) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.03) !important;
+}
+
+body[data-theme="startrek"] select[multiple] option {
+  background: #120d13 !important;
+  color: #f8e6d2 !important;
+  padding: 6px 8px !important;
+}
+
+/* Persistent selected state */
+body[data-theme="startrek"] select[multiple] option:checked,
+body[data-theme="startrek"] select[multiple] option[selected] {
+  background: #c4b5fd !important;
+  color: #1b1230 !important;
+}
+
+/* Focused selected state */
+body[data-theme="startrek"] select[multiple]:focus option:checked,
+body[data-theme="startrek"] select[multiple]:focus option[selected],
+body[data-theme="startrek"] select[multiple]:focus-visible option:checked,
+body[data-theme="startrek"] select[multiple]:focus-visible option[selected] {
+  background: #f472b6 !important;
+  color: #2a1020 !important;
+}
+
+/* Browser-specific selection fallback */
+body[data-theme="startrek"] select[multiple] option:checked:hover,
+body[data-theme="startrek"] select[multiple] option[selected]:hover {
+  background: #ddd6fe !important;
+  color: #1b1230 !important;
+}
+
+/* Elegant button layout in dedicated Star Trek sidebar */
+body[data-theme="startrek"] .topbar {
+  padding: 18px !important;
+}
+
+body[data-theme="startrek"] .topbar-row {
+  display: block !important;
+  gap: 0 !important;
+}
+
+body[data-theme="startrek"] .topbar-row + .topbar-row {
+  margin-top: 12px !important;
+  padding-top: 12px !important;
+  border-top: 1px solid rgba(196,181,253,0.10) !important;
+}
+
+body[data-theme="startrek"] .topbar-row:first-child .toolbar-group,
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+  align-items: stretch !important;
+}
+
+/* First row: stats stay full width and theme button sits cleanly */
+body[data-theme="startrek"] .topbar-row:first-child .status-pill {
+  grid-column: span 1 !important;
+}
+
+body[data-theme="startrek"] .topbar-row:first-child .theme-menu-wrap {
+  grid-column: span 1 !important;
+  display: block !important;
+}
+
+body[data-theme="startrek"] .topbar-row:first-child .theme-trigger {
+  width: 100% !important;
+}
+
+/* Second row dedicated zones */
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(1) {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(2) {
+  display: block !important;
+  margin-top: 8px !important;
+}
+
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(3) {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  margin-top: 8px !important;
+}
+
+/* Segmented control gets its own clean row */
+body[data-theme="startrek"] .segmented {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 6px !important;
+  width: 100% !important;
+  padding: 6px !important;
+  border-radius: 24px 12px 24px 12px !important;
+  overflow: hidden !important;
+}
+
+body[data-theme="startrek"] .segmented .btn,
+body[data-theme="startrek"] .view-btn {
+  width: 100% !important;
+  min-width: 0 !important;
+  white-space: nowrap !important;
+  justify-content: center !important;
+  font-size: 13px !important;
+  padding-inline: 8px !important;
+}
+
+/* General button sizing for sidebar harmony */
+body[data-theme="startrek"] .btn,
+body[data-theme="startrek"] .file-input-label,
+body[data-theme="startrek"] .theme-trigger,
+body[data-theme="startrek"] .status-pill {
+  min-height: 38px !important;
+  padding: 8px 10px !important;
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+  min-width: 0 !important;
+  width: 100%;
+  box-sizing: border-box !important;
+}
+
+body[data-theme="startrek"] .status-pill {
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Keep upload/filters/replace controls from colliding */
+body[data-theme="startrek"] .toolbar-group > *,
+body[data-theme="startrek"] .theme-menu-wrap {
+  min-width: 0 !important;
+}
+
+/* Mobile-safe fallback */
+@media (max-width: 980px) {
+  body[data-theme="startrek"] .topbar-row:first-child .toolbar-group,
+  body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(1),
+  body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(3) {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  body[data-theme="startrek"] .segmented {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+</style>
+
+
+<style id="global-multiselect-selection-visibility-fix">
+/* Global multi-select visibility fix across all themes */
+select[multiple] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Default option styling */
+select[multiple] option {
+  padding: 6px 8px !important;
+}
+
+/* Brand theme */
+body[data-theme="brand"] select[multiple] option {
+  background: #161d26 !important;
+  color: #eef4fb !important;
+}
+body[data-theme="brand"] select[multiple] option:checked,
+body[data-theme="brand"] select[multiple] option[selected] {
+  background: #7fd7ff !important;
+  color: #08131a !important;
+}
+
+/* Classic theme */
+body[data-theme="classic"] select[multiple] option {
+  background: #ffffff !important;
+  color: #1f2937 !important;
+}
+body[data-theme="classic"] select[multiple] option:checked,
+body[data-theme="classic"] select[multiple] option[selected] {
+  background: #0f3d75 !important;
+  color: #ffffff !important;
+}
+
+/* Springfield theme */
+body[data-theme="springfield"] select[multiple] option {
+  background: #fff6b8 !important;
+  color: #3b2c08 !important;
+}
+body[data-theme="springfield"] select[multiple] option:checked,
+body[data-theme="springfield"] select[multiple] option[selected] {
+  background: #ef5d36 !important;
+  color: #ffffff !important;
+}
+
+/* Noir theme */
+body[data-theme="noir"] select[multiple] option {
+  background: #121212 !important;
+  color: #ececec !important;
+}
+body[data-theme="noir"] select[multiple] option:checked,
+body[data-theme="noir"] select[multiple] option[selected] {
+  background: #efefef !important;
+  color: #0b0b0b !important;
+}
+
+/* Glass theme */
+body[data-theme="glass"] select[multiple] option {
+  background: rgba(17,24,39,0.96) !important;
+  color: #ffffff !important;
+}
+body[data-theme="glass"] select[multiple] option:checked,
+body[data-theme="glass"] select[multiple] option[selected] {
+  background: #6366f1 !important;
+  color: #ffffff !important;
+}
+
+/* Star Trek theme */
+body[data-theme="startrek"] select[multiple] option {
+  background: #120d13 !important;
+  color: #f8e6d2 !important;
+}
+body[data-theme="startrek"] select[multiple] option:checked,
+body[data-theme="startrek"] select[multiple] option[selected] {
+  background: #c4b5fd !important;
+  color: #1b1230 !important;
+}
+
+/* Red Alert theme */
+body[data-theme="redalert"] select[multiple] option {
+  background: #140000 !important;
+  color: #ffeaea !important;
+}
+body[data-theme="redalert"] select[multiple] option:checked,
+body[data-theme="redalert"] select[multiple] option[selected] {
+  background: #ff4d4d !important;
+  color: #ffffff !important;
+}
+</style>
+
+
+<style id="startrek-controls-layout-rethink-v4">
+/* Star Trek controls: calmer, more intentional console layout */
+body[data-theme="startrek"] .topbar {
+  padding: 20px !important;
+  min-height: 0 !important;
+}
+
+body[data-theme="startrek"] .topbar::after {
+  width: 82px !important;
+}
+
+body[data-theme="startrek"] .title-wrap {
+  margin-bottom: 8px !important;
+  padding-right: 72px !important;
+}
+
+body[data-theme="startrek"] .app-title {
+  font-size: 27px !important;
+}
+
+body[data-theme="startrek"] .topbar-row {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 10px !important;
+  align-items: stretch !important;
+}
+
+body[data-theme="startrek"] .topbar-row + .topbar-row {
+  margin-top: 12px !important;
+  padding-top: 14px !important;
+  border-top: 1px solid rgba(196,181,253,0.12) !important;
+}
+
+body[data-theme="startrek"] .topbar-row .toolbar-group {
+  display: grid !important;
+  gap: 8px !important;
+  align-items: stretch !important;
+  min-width: 0 !important;
+}
+
+/* Row 1: summary + theme + replace */
+body[data-theme="startrek"] .topbar-row:first-child .toolbar-group {
+  grid-template-columns: 1fr 1fr !important;
+}
+
+body[data-theme="startrek"] .topbar-row:first-child .status-pill {
+  grid-column: 1 / -1 !important;
+  justify-content: center !important;
+  min-height: 36px !important;
+}
+
+body[data-theme="startrek"] .topbar-row:first-child .theme-menu-wrap,
+body[data-theme="startrek"] .topbar-row:first-child .file-input-label {
+  width: 100% !important;
+}
+
+body[data-theme="startrek"] .topbar-row:first-child .theme-trigger {
+  width: 100% !important;
+}
+
+/* Row 2: navigation in a single clean band */
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(1) {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+/* Row 2: view switch on its own band */
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(2) {
+  display: block !important;
+  margin-top: 2px !important;
+}
+
+/* Row 2: filter summary under controls */
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(3) {
+  grid-template-columns: 1fr !important;
+  margin-top: 2px !important;
+}
+
+body[data-theme="startrek"] .segmented {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  width: 100% !important;
+  gap: 6px !important;
+  padding: 6px !important;
+  border-radius: 24px 12px 24px 12px !important;
+  overflow: hidden !important;
+}
+
+body[data-theme="startrek"] .segmented .btn,
+body[data-theme="startrek"] .view-btn {
+  min-width: 0 !important;
+  width: 100% !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  font-size: 12.5px !important;
+  padding: 8px 6px !important;
+  min-height: 34px !important;
+}
+
+body[data-theme="startrek"] .btn,
+body[data-theme="startrek"] .file-input-label,
+body[data-theme="startrek"] .theme-trigger,
+body[data-theme="startrek"] .status-pill {
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 36px !important;
+  padding: 8px 10px !important;
+  font-size: 12.5px !important;
+  line-height: 1.15 !important;
+  box-sizing: border-box !important;
+}
+
+body[data-theme="startrek"] .status-pill {
+  text-align: center !important;
+}
+
+body[data-theme="startrek"] #activeFilterCountPill {
+  order: 2 !important;
+}
+
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(3) .status-pill {
+  min-height: 34px !important;
+}
+
+/* Hide the Filters button in Star Trek since filters are permanently shown */
+body[data-theme="startrek"] #toggleFiltersBtn {
+  display: none !important;
+}
+
+/* Give the lower info pill a slightly quieter treatment */
+body[data-theme="startrek"] #activeFilterCountPill {
+  background: linear-gradient(180deg, #f8b4d9 0%, #f472b6 100%) !important;
+  color: #2a1020 !important;
+}
+
+/* Safer spacing on smaller widths */
+@media (max-width: 980px) {
+  body[data-theme="startrek"] .topbar-row:first-child .toolbar-group {
+    grid-template-columns: 1fr !important;
+  }
+
+  body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(1) {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+</style>
+
+
+<style id="startrek-controls-row-adjust-v5">
+/* Star Trek: put Replace / Filters / Theme together and restore Filters button */
+body[data-theme="startrek"] .topbar-row:first-child .toolbar-group {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+body[data-theme="startrek"] .topbar-row:first-child .status-pill {
+  grid-column: 1 / -1 !important;
+}
+
+body[data-theme="startrek"] .topbar-row:first-child .theme-menu-wrap,
+body[data-theme="startrek"] .topbar-row:first-child .file-input-label,
+body[data-theme="startrek"] .topbar-row:first-child #toggleFiltersBtn {
+  width: 100% !important;
+  display: flex !important;
+}
+
+body[data-theme="startrek"] .topbar-row:first-child .theme-trigger {
+  width: 100% !important;
+}
+
+body[data-theme="startrek"] #toggleFiltersBtn {
+  display: inline-flex !important;
+}
+
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(3) {
+  grid-template-columns: 1fr !important;
+  margin-top: 2px !important;
+}
+
+/* keep lower pill as secondary info only */
+body[data-theme="startrek"] #activeFilterCountPill {
+  background: linear-gradient(180deg, #f8b4d9 0%, #f472b6 100%) !important;
+  color: #2a1020 !important;
+}
+</style>
+
+
+<style id="startrek-button-system-fix">
+body[data-theme="startrek"] .topbar-row:first-child .toolbar-group {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 8px !important;
+}
+
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(1) {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 8px !important;
+}
+
+body[data-theme="startrek"] .btn,
+body[data-theme="startrek"] .file-input-label,
+body[data-theme="startrek"] .theme-trigger,
+body[data-theme="startrek"] #toggleFiltersBtn {
+  width: 100% !important;
+  height: 42px !important;
+  min-height: 42px !important;
+  max-height: 42px !important;
+  padding: 0 10px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+body[data-theme="startrek"] .segmented {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 6px !important;
+  width: 100% !important;
+  padding: 6px !important;
+}
+
+body[data-theme="startrek"] .segmented .btn {
+  height: 38px !important;
+  min-height: 38px !important;
+}
+
+body[data-theme="startrek"] .toolbar-group > * {
+  min-width: 0 !important;
+}
+</style>
+
+
+<style id="startrek-single-utility-row-fix">
+/* Star Trek: Replace file, Theme, Filters on the same row */
+body[data-theme="startrek"] .topbar-row:first-child .toolbar-group {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 6px !important;
+  align-items: stretch !important;
+}
+
+body[data-theme="startrek"] .topbar-row:first-child .status-pill {
+  grid-column: 1 / -1 !important;
+}
+
+body[data-theme="startrek"] .topbar-row:first-child .file-input-label,
+body[data-theme="startrek"] .topbar-row:first-child .theme-menu-wrap,
+body[data-theme="startrek"] .topbar-row:first-child #toggleFiltersBtn {
+  grid-column: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+body[data-theme="startrek"] .topbar-row:first-child .theme-trigger {
+  width: 100% !important;
+}
+
+/* make the three utility controls fit comfortably */
+body[data-theme="startrek"] .topbar-row:first-child .file-input-label,
+body[data-theme="startrek"] .topbar-row:first-child .theme-trigger,
+body[data-theme="startrek"] .topbar-row:first-child #toggleFiltersBtn {
+  height: 36px !important;
+  min-height: 36px !important;
+  max-height: 36px !important;
+  padding: 0 8px !important;
+  font-size: 11.5px !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* keep the theme wrapper from expanding oddly */
+body[data-theme="startrek"] .topbar-row:first-child .theme-menu-wrap {
+  display: block !important;
+}
+
+/* second row remains navigation only */
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(1) {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+}
+
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(2) {
+  display: block !important;
+  margin-top: 8px !important;
+}
+
+body[data-theme="startrek"] .topbar-row:last-child .toolbar-group:nth-child(3) {
+  grid-template-columns: 1fr !important;
+  margin-top: 8px !important;
+}
+
+/* slightly compact the header so the first row breathes */
+body[data-theme="startrek"] .topbar {
+  padding: 18px !important;
+}
+
+body[data-theme="startrek"] .title-wrap {
+  margin-bottom: 6px !important;
+}
+</style>
+
+
+<style id="startrek-utility-row-actual-fix">
+/* Star Trek: actual single utility row with Replace / Filters / Theme */
+body[data-theme="startrek"] .topbar-row-secondary.topbar-row-zoned {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 10px !important;
+}
+
+body[data-theme="startrek"] .topbar-zone-left,
+body[data-theme="startrek"] .topbar-zone-center,
+body[data-theme="startrek"] .topbar-zone-right {
+  width: 100% !important;
+}
+
+body[data-theme="startrek"] .topbar-zone-right {
+  display: none !important;
+}
+
+body[data-theme="startrek"] .toolbar-cluster-left {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 6px !important;
+  width: 100% !important;
+  align-items: stretch !important;
+}
+
+body[data-theme="startrek"] .toolbar-cluster-left > *,
+body[data-theme="startrek"] .toolbar-cluster-left .theme-menu-wrap {
+  min-width: 0 !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+body[data-theme="startrek"] .toolbar-cluster-left .file-input-label,
+body[data-theme="startrek"] .toolbar-cluster-left #toggleFiltersBtn,
+body[data-theme="startrek"] .toolbar-cluster-left .theme-trigger {
+  width: 100% !important;
+  height: 36px !important;
+  min-height: 36px !important;
+  max-height: 36px !important;
+  padding: 0 8px !important;
+  font-size: 11.5px !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+body[data-theme="startrek"] .nav-cluster {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+  width: 100% !important;
+}
+
+body[data-theme="startrek"] .nav-cluster .btn {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 38px !important;
+  min-height: 38px !important;
+}
+
+body[data-theme="startrek"] .compact-segmented {
+  margin-top: 8px !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  width: 100% !important;
+}
+
+body[data-theme="startrek"] .compact-segmented .btn {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+</style>
+
 </head>
 <body data-theme="brand" class="theme-brand">
   <div class="app-shell">
@@ -3584,7 +5094,7 @@ body[data-theme="glass"] .fc .fc-scrollgrid-sync-table tbody tr:last-child td:la
     }
 
     function applyTheme(theme) {
-      const safeTheme = ['brand', 'classic', 'springfield', 'noir', 'glass'].includes(theme) ? theme : 'brand';
+      const safeTheme = ['brand', 'classic', 'springfield', 'noir', 'glass', 'startrek', 'redalert'].includes(theme) ? theme : 'brand';
       const themeClasses = ['theme-brand', 'theme-classic', 'theme-springfield', 'theme-noir', 'theme-glass'];
       document.body.setAttribute('data-theme', safeTheme);
       document.documentElement.setAttribute('data-theme', safeTheme);
@@ -3598,7 +5108,9 @@ body[data-theme="glass"] .fc .fc-scrollgrid-sync-table tbody tr:last-child td:la
         { id: 'themeClassicBtn', theme: 'classic' },
         { id: 'themeSpringfieldBtn', theme: 'springfield' },
         { id: 'themeNoirBtn', theme: 'noir' },
-        { id: 'themeGlassBtn', theme: 'glass' }
+        { id: 'themeGlassBtn', theme: 'glass' },
+        { id: 'themeStarTrekBtn', theme: 'startrek' },
+        { id: 'themeRedAlertBtn', theme: 'redalert' }
       ];
 
       themeButtons.forEach(({ id, theme }) => {
@@ -3616,7 +5128,10 @@ body[data-theme="glass"] .fc .fc-scrollgrid-sync-table tbody tr:last-child td:la
           classic: 'Original',
           springfield: 'Springfield',
           noir: 'Film Noir',
-          glass: 'Glass'
+          glass: 'Glass',
+          startrek: 'Star Trek',
+          redalert: 'Red Alert',
+          redalert: 'Red Alert'
         };
         themeMenuButton.textContent = labelMap[safeTheme] || 'Theme';
       }
@@ -3632,7 +5147,7 @@ body[data-theme="glass"] .fc .fc-scrollgrid-sync-table tbody tr:last-child td:la
       let savedTheme = 'brand';
       try {
         savedTheme = localStorage.getItem('demoforceCalendarTheme') || 'brand';
-        if (!['brand', 'classic', 'springfield', 'noir', 'glass'].includes(savedTheme)) savedTheme = 'brand';
+        if (!['brand', 'classic', 'springfield', 'noir', 'glass', 'startrek', 'redalert'].includes(savedTheme)) savedTheme = 'brand';
       } catch (e) {}
       applyTheme(savedTheme);
     }
@@ -4153,6 +5668,8 @@ body[data-theme="glass"] .fc .fc-scrollgrid-sync-table tbody tr:last-child td:la
     const themeSpringfieldBtn = document.getElementById('themeSpringfieldBtn');
     const themeNoirBtn = document.getElementById('themeNoirBtn');
     const themeGlassBtn = document.getElementById('themeGlassBtn');
+    const themeStarTrekBtn = document.getElementById('themeStarTrekBtn');
+    const themeRedAlertBtn = document.getElementById('themeRedAlertBtn');
 
     function closeThemeMenu() {
       if (!themeMenuPopover || !themeMenuButton) return;
@@ -4175,7 +5692,7 @@ body[data-theme="glass"] .fc .fc-scrollgrid-sync-table tbody tr:last-child td:la
       });
     }
 
-    [themeBrandBtn, themeClassicBtn, themeSpringfieldBtn, themeNoirBtn, themeGlassBtn].forEach(function (btn) {
+    [themeBrandBtn, themeClassicBtn, themeSpringfieldBtn, themeNoirBtn, themeGlassBtn, themeStarTrekBtn, themeRedAlertBtn].forEach(function (btn) {
       if (!btn) return;
       btn.addEventListener('mouseenter', function () {
         btn.classList.add('is-hovering');
@@ -4329,7 +5846,9 @@ body[data-theme="glass"] .fc .fc-scrollgrid-sync-table tbody tr:last-child td:la
     '<button type="button" data-theme="classic">Original</button>' +
     '<button type="button" data-theme="springfield">Springfield</button>' +
     '<button type="button" data-theme="noir">Film Noir</button>' +
-    '<button type="button" data-theme="glass">Glass</button>';
+    '<button type="button" data-theme="glass">Glass</button>' +
+    '<button type="button" data-theme="startrek">Star Trek</button>' +
+    '<button type="button" data-theme="redalert">Red Alert</button>';
   wrap.appendChild(menu);
 
   function syncButtons(theme) {
@@ -4414,7 +5933,9 @@ body[data-theme="glass"] .fc .fc-scrollgrid-sync-table tbody tr:last-child td:la
     '<button type="button" data-theme="classic">Original</button>' +
     '<button type="button" data-theme="springfield">Springfield</button>' +
     '<button type="button" data-theme="noir">Film Noir</button>' +
-    '<button type="button" data-theme="glass">Glass</button>';
+    '<button type="button" data-theme="glass">Glass</button>' +
+    '<button type="button" data-theme="startrek">Star Trek</button>' +
+    '<button type="button" data-theme="redalert">Red Alert</button>';
   document.body.appendChild(portal);
 
   function getTheme() {
@@ -4485,6 +6006,264 @@ body[data-theme="glass"] .fc .fc-scrollgrid-sync-table tbody tr:last-child td:la
   }, true);
 
   syncActive(getTheme());
+})();
+</script>
+
+
+<script id="startrek-theme-fallback-fix">
+document.addEventListener('click', function (e) {
+  var btn = e.target.closest('[data-theme-choice="startrek"], button[data-theme="startrek"]');
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  if (typeof applyTheme === 'function') {
+    applyTheme('startrek');
+  }
+}, true);
+</script>
+
+
+<script id="redalert-theme-fallback-fix">
+document.addEventListener('click', function (e) {
+  var btn = e.target.closest('[data-theme-choice="redalert"], button[data-theme="redalert"]');
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  if (typeof applyTheme === 'function') {
+    applyTheme('redalert');
+  }
+}, true);
+</script>
+
+
+<script id="redalert-runtime-visual-fix">
+(function() {
+  var originalApply = window.applyTheme || applyTheme;
+  if (!originalApply) return;
+  var wrapped = function(theme) {
+    originalApply(theme);
+    if ((theme || '') !== 'redalert') return;
+    document.body.setAttribute('data-theme', 'redalert');
+    document.documentElement.setAttribute('data-theme', 'redalert');
+  };
+  window.applyTheme = wrapped;
+})();
+</script>
+
+
+<script id="startrek-layout-runtime">
+(function() {
+  var originalApplyTheme = window.applyTheme || applyTheme;
+  if (!originalApplyTheme || window.__startrekWrapped) return;
+  window.__startrekWrapped = true;
+
+  function syncStartrekLayout(theme) {
+    var filtersPanel = document.getElementById('filtersPanel');
+    var toggleBtn = document.getElementById('toggleFiltersBtn');
+    if (!filtersPanel) return;
+
+    if (theme === 'startrek') {
+      filtersPanel.classList.add('open');
+      if (toggleBtn) toggleBtn.textContent = 'Filters';
+    }
+  }
+
+  var wrapped = function(theme) {
+    originalApplyTheme(theme);
+    syncStartrekLayout(theme);
+  };
+
+  window.applyTheme = wrapped;
+
+  try {
+    var current = document.body.getAttribute('data-theme');
+    if (current) syncStartrekLayout(current);
+  } catch (e) {}
+})();
+</script>
+
+
+<script id="startrek-filter-refresh-v3">
+(function() {
+  function refreshStarTrekSelections() {
+    if (document.body.getAttribute('data-theme') !== 'startrek') return;
+    ['salesEngineerFilter','activityTypeFilter','engagementFilter'].forEach(function(id) {
+      var sel = document.getElementById(id);
+      if (!sel) return;
+      Array.prototype.forEach.call(sel.options, function(opt) {
+        if (opt.selected) {
+          opt.setAttribute('selected', 'selected');
+        } else {
+          opt.removeAttribute('selected');
+        }
+      });
+    });
+  }
+
+  document.addEventListener('change', function(e) {
+    if (e.target && e.target.matches('select[multiple]')) {
+      refreshStarTrekSelections();
+    }
+  });
+
+  var originalApplyTheme = window.applyTheme || (typeof applyTheme === 'function' ? applyTheme : null);
+  if (originalApplyTheme && !window.__startrekSelectionWrapped) {
+    window.__startrekSelectionWrapped = true;
+    var wrapped = function(theme) {
+      originalApplyTheme(theme);
+      setTimeout(refreshStarTrekSelections, 0);
+    };
+    window.applyTheme = wrapped;
+  }
+
+  setTimeout(refreshStarTrekSelections, 0);
+})();
+</script>
+
+
+<script id="global-multiselect-selection-refresh-fix">
+(function() {
+  function refreshSelections() {
+    ['salesEngineerFilter','activityTypeFilter','engagementFilter'].forEach(function(id) {
+      var sel = document.getElementById(id);
+      if (!sel) return;
+      Array.prototype.forEach.call(sel.options, function(opt) {
+        if (opt.selected) {
+          opt.setAttribute('selected', 'selected');
+        } else {
+          opt.removeAttribute('selected');
+        }
+      });
+    });
+  }
+
+  document.addEventListener('change', function(e) {
+    if (e.target && e.target.matches('select[multiple]')) {
+      refreshSelections();
+    }
+  }, true);
+
+  document.addEventListener('click', function(e) {
+    if (e.target && e.target.matches('select[multiple], select[multiple] option')) {
+      setTimeout(refreshSelections, 0);
+    }
+  }, true);
+
+  var originalApplyTheme = window.applyTheme || (typeof applyTheme === 'function' ? applyTheme : null);
+  if (originalApplyTheme && !window.__globalSelectionWrapped) {
+    window.__globalSelectionWrapped = true;
+    var wrapped = function(theme) {
+      originalApplyTheme(theme);
+      setTimeout(refreshSelections, 0);
+    };
+    window.applyTheme = wrapped;
+  }
+
+  var originalApplyFilters = window.applyFilters || (typeof applyFilters === 'function' ? applyFilters : null);
+  if (originalApplyFilters && !window.__globalFilterWrapped) {
+    window.__globalFilterWrapped = true;
+    var wrappedFilters = function() {
+      var result = originalApplyFilters.apply(this, arguments);
+      setTimeout(refreshSelections, 0);
+      return result;
+    };
+    window.applyFilters = wrappedFilters;
+  }
+
+  setTimeout(refreshSelections, 0);
+})();
+</script>
+
+
+<script id="startrek-theme-button-row-move">
+(function() {
+  function syncStarTrekUtilityRow(theme) {
+    var themeWrap = document.querySelector('.theme-menu-wrap');
+    var leftCluster = document.querySelector('.toolbar-cluster-left');
+    var rightZone = document.querySelector('.topbar-zone-right');
+    if (!themeWrap || !leftCluster || !rightZone) return;
+
+    if (!rightZone.dataset.originalParentSet) {
+      rightZone.dataset.originalParentSet = '1';
+    }
+
+    if (theme === 'startrek') {
+      if (themeWrap.parentElement !== leftCluster) {
+        leftCluster.appendChild(themeWrap);
+      }
+    } else {
+      if (themeWrap.parentElement !== rightZone) {
+        rightZone.appendChild(themeWrap);
+      }
+    }
+  }
+
+  var originalApplyTheme = window.applyTheme || (typeof applyTheme === 'function' ? applyTheme : null);
+  if (originalApplyTheme && !window.__startrekUtilityRowWrapped) {
+    window.__startrekUtilityRowWrapped = true;
+    var wrapped = function(theme) {
+      originalApplyTheme(theme);
+      syncStarTrekUtilityRow(theme);
+    };
+    window.applyTheme = wrapped;
+  }
+
+  var currentTheme = document.body.getAttribute('data-theme') || 'brand';
+  syncStarTrekUtilityRow(currentTheme);
+})();
+</script>
+
+
+<script id="startrek-reset-filters">
+(function(){
+  function setButtonLabel(theme){
+    var btn = document.getElementById('toggleFiltersBtn');
+    if(!btn) return;
+    if(theme === 'startrek'){
+      btn.textContent = 'Reset Filters';
+      btn.setAttribute('title','Reset all filters');
+    } else {
+      btn.textContent = 'Filters';
+      btn.setAttribute('title','Show/Hide Filters');
+    }
+  }
+
+  function resetFilters(){
+    var ids = ['salesEngineerFilter','activityTypeFilter','engagementFilter'];
+    ids.forEach(function(id){
+      var sel = document.getElementById(id);
+      if(!sel) return;
+      for(var i=0;i<sel.options.length;i++){
+        sel.options[i].selected = false;
+        sel.options[i].removeAttribute('selected');
+      }
+    });
+    if(typeof applyFilters === 'function'){
+      applyFilters();
+    }
+  }
+
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('#toggleFiltersBtn');
+    if(!btn) return;
+    var theme = document.body.getAttribute('data-theme');
+    if(theme === 'startrek'){
+      e.preventDefault();
+      resetFilters();
+    }
+  }, true);
+
+  var originalApplyTheme = window.applyTheme || (typeof applyTheme === 'function' ? applyTheme : null);
+  if(originalApplyTheme && !window.__startrekResetWrapped){
+    window.__startrekResetWrapped = true;
+    var wrapped = function(theme){
+      originalApplyTheme(theme);
+      setButtonLabel(theme);
+    };
+    window.applyTheme = wrapped;
+  }
+
+  setButtonLabel(document.body.getAttribute('data-theme')||'brand');
 })();
 </script>
 
