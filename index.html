@@ -5845,6 +5845,73 @@ body:not([data-theme="startrek"]):not([data-theme="syndigo"]) .topbar-row-second
   }
 }
 </style>
+
+<style id="startrek-filter-layering-fix-v6">
+/* Star Trek filter layering fix
+   The LCARS-style top-left console remains visible, but it no longer sits above
+   or blocks the filter panel below it. */
+body[data-theme="startrek"] .topbar {
+  z-index: 1 !important;
+}
+
+/* Star Trek stacking correction: keep controls, filters, and decorative LCARS layers in their own lanes. */
+body[data-theme="startrek"] .topbar {
+  position: sticky !important;
+  z-index: 20 !important;
+  overflow: hidden !important;
+}
+
+body[data-theme="startrek"] .topbar::before,
+body[data-theme="startrek"] .topbar::after,
+body[data-theme="startrek"] .filters-panel::before,
+body[data-theme="startrek"] .calendar-card::before {
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+body[data-theme="startrek"] .topbar-row,
+body[data-theme="startrek"] .topbar-zone,
+body[data-theme="startrek"] .toolbar-group,
+body[data-theme="startrek"] .toolbar-cluster,
+body[data-theme="startrek"] .theme-menu-wrap,
+body[data-theme="startrek"] .title-wrap {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+body[data-theme="startrek"] .filters-panel {
+  position: relative !important;
+  z-index: 10 !important;
+  isolation: auto !important;
+  pointer-events: auto !important;
+  align-self: start !important;
+}
+
+body[data-theme="startrek"] .filters-inner,
+body[data-theme="startrek"] .filters-grid,
+body[data-theme="startrek"] .filter-card,
+body[data-theme="startrek"] select[multiple],
+body[data-theme="startrek"] .filters-footer {
+  position: relative !important;
+  z-index: 1 !important;
+  pointer-events: auto !important;
+}
+
+body[data-theme="startrek"] .calendar-card {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+@media (min-width: 1181px) {
+  body[data-theme="startrek"] .topbar {
+    align-self: start !important;
+  }
+
+  body[data-theme="startrek"] .filters-panel {
+    align-self: start !important;
+  }
+}
+</style>
 </head>
 <body data-theme="brand" class="theme-brand">
   <div class="app-shell">
