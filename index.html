@@ -7989,5 +7989,68 @@ document.addEventListener('click', function (e) {
 })();
 </script>
 
+
+<style id="filters-panel-visibility-final-fix">
+/* Final filter visibility repair. Some layout scripts write inline hidden/display/height styles to #filtersPanel. */
+#filtersPanel.open,
+body[data-theme] #filtersPanel.open {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 0 16px 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  pointer-events: auto !important;
+  border-style: solid !important;
+}
+#filtersPanel.open #filtersInner,
+body[data-theme] #filtersPanel.open #filtersInner { display: block !important; }
+#filtersPanel:not(.open) { display: none !important; }
+</style>
+
+<script id="filters-panel-visibility-final-fix-script">
+(function(){
+  function getPanel(){ return document.getElementById('filtersPanel'); }
+  function clearHiddenInlineState(panel){
+    if (!panel) return;
+    panel.hidden = false;
+    panel.removeAttribute('hidden');
+    ['display','visibility','opacity','position','height','minHeight','maxHeight','margin','padding','overflow','pointerEvents','border','boxShadow'].forEach(function(prop){ panel.style[prop] = ''; });
+  }
+  function makeOpenPanelVisible(){
+    var panel = getPanel();
+    if (!panel || !panel.classList.contains('open')) return;
+    clearHiddenInlineState(panel);
+  }
+  function repairAfterThemeChange(){
+    var panel = getPanel();
+    if (!panel) return;
+    if ((document.body.getAttribute('data-theme') || '') !== 'syndigo') clearHiddenInlineState(panel);
+    makeOpenPanelVisible();
+  }
+  document.addEventListener('click', function(e){
+    if (!e.target.closest('#toggleFiltersBtn')) return;
+    setTimeout(makeOpenPanelVisible, 0);
+    setTimeout(makeOpenPanelVisible, 80);
+  }, true);
+  var previousApplyTheme = window.applyTheme;
+  if (typeof previousApplyTheme === 'function' && !window.__filtersPanelVisibilityWrapped) {
+    window.__filtersPanelVisibilityWrapped = true;
+    window.applyTheme = function(theme){
+      var result = previousApplyTheme.apply(this, arguments);
+      setTimeout(repairAfterThemeChange, 0);
+      setTimeout(repairAfterThemeChange, 100);
+      return result;
+    };
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', repairAfterThemeChange);
+  else repairAfterThemeChange();
+})();
+</script>
+
 </body>
 </html>
