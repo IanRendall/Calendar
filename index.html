@@ -2454,6 +2454,19 @@ body[data-theme="springfield"] .theme-menu-overlay-fixed button:hover,
 body[data-theme="springfield"] .theme-menu-overlay-fixed button.active {
   background: rgba(255,255,255,0.34);
 }
+body[data-theme="syndigo"] .theme-menu-overlay-fixed {
+  background: #ffffff;
+  border: 1px solid #cfd6e2;
+  box-shadow: 0 16px 36px rgba(15,23,42,0.14);
+}
+body[data-theme="syndigo"] .theme-menu-overlay-fixed button {
+  color: #324255;
+  background: transparent;
+}
+body[data-theme="syndigo"] .theme-menu-overlay-fixed button:hover,
+body[data-theme="syndigo"] .theme-menu-overlay-fixed button.active {
+  background: #eaf3ff;
+}
 body[data-theme="brand"] #themeMenuButton,
 body[data-theme="brand"] #themeMenuButton:hover,
 body[data-theme="brand"] #themeMenuButton:focus { color: #eef4fb !important; }
@@ -2541,6 +2554,24 @@ html[data-theme="springfield"] #themeMenuPortal button.active,
 body[data-theme="springfield"] #themeMenuPortal button:hover,
 body[data-theme="springfield"] #themeMenuPortal button.active {
   background: rgba(255,255,255,0.34);
+}
+
+html[data-theme="syndigo"] #themeMenuPortal,
+body[data-theme="syndigo"] #themeMenuPortal {
+  background: #ffffff;
+  border: 1px solid #cfd6e2;
+  box-shadow: 0 16px 36px rgba(15,23,42,0.14);
+}
+html[data-theme="syndigo"] #themeMenuPortal button,
+body[data-theme="syndigo"] #themeMenuPortal button {
+  color: #324255;
+  background: transparent;
+}
+html[data-theme="syndigo"] #themeMenuPortal button:hover,
+html[data-theme="syndigo"] #themeMenuPortal button.active,
+body[data-theme="syndigo"] #themeMenuPortal button:hover,
+body[data-theme="syndigo"] #themeMenuPortal button.active {
+  background: #eaf3ff;
 }
 </style>
 
@@ -4945,6 +4976,875 @@ body[data-theme="startrek"] .compact-segmented .btn {
 }
 </style>
 
+
+<style id="syndigo-theme-self-contained">
+/* Syndigo theme: self-contained visual layer only */
+body[data-theme="syndigo"] {
+  background: #f3f4f7 !important;
+  color: #243046 !important;
+}
+
+body[data-theme="syndigo"] .app-shell {
+  max-width: 100% !important;
+  padding: 0 8px 8px !important;
+}
+
+body[data-theme="syndigo"] .topbar {
+  background: #313ca8 !important;
+  border: 1px solid #2c3596 !important;
+  border-radius: 0 0 10px 10px !important;
+  box-shadow: none !important;
+  max-width: none !important;
+  margin: 0 0 10px 0 !important;
+  padding: 12px 18px !important;
+}
+
+body[data-theme="syndigo"] .topbar::before,
+body[data-theme="syndigo"] .topbar::after,
+body[data-theme="syndigo"] .calendar-card::before,
+body[data-theme="syndigo"] .calendar-card::after,
+body[data-theme="syndigo"] .filters-panel::before,
+body[data-theme="syndigo"] .filters-panel::after {
+  content: none !important;
+  display: none !important;
+}
+
+body[data-theme="syndigo"] .app-title,
+body[data-theme="syndigo"] #dateRangeLabel {
+  color: #ffffff !important;
+}
+
+body[data-theme="syndigo"] .title-wrap-compact {
+  gap: 2px !important;
+}
+
+body[data-theme="syndigo"] .app-title {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+}
+
+body[data-theme="syndigo"] .subtext,
+body[data-theme="syndigo"] .summary-text,
+body[data-theme="syndigo"] .helper-line,
+body[data-theme="syndigo"] .event-card-meta,
+body[data-theme="syndigo"] .detail-grid .label {
+  color: #5f6d84 !important;
+}
+
+body[data-theme="syndigo"] .toolbar-group-status {
+  gap: 8px !important;
+}
+
+body[data-theme="syndigo"] .status-pill {
+  background: rgba(255,255,255,0.12) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255,255,255,0.16) !important;
+  box-shadow: none !important;
+}
+
+body[data-theme="syndigo"] .segmented,
+body[data-theme="syndigo"] .theme-segmented {
+  background: #e8ebf2 !important;
+  border: 1px solid #cfd6e2 !important;
+  box-shadow: none !important;
+}
+
+body[data-theme="syndigo"] .btn,
+body[data-theme="syndigo"] .file-input-label,
+body[data-theme="syndigo"] .theme-trigger {
+  background: #ffffff !important;
+  color: #425066 !important;
+  border: 1px solid #cfd6e2 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  font-weight: 600 !important;
+}
+
+body[data-theme="syndigo"] .btn:hover,
+body[data-theme="syndigo"] .file-input-label:hover,
+body[data-theme="syndigo"] .theme-trigger:hover {
+  background: #f6f8fb !important;
+  border-color: #b8c3d4 !important;
+  transform: none !important;
+}
+
+body[data-theme="syndigo"] .btn-primary,
+body[data-theme="syndigo"] .btn-active,
+body[data-theme="syndigo"] .view-btn.btn-active {
+  background: #1a73d9 !important;
+  color: #ffffff !important;
+  border-color: #1a73d9 !important;
+}
+
+body[data-theme="syndigo"] #todayBtn {
+  background: #23b14d !important;
+  border-color: #23b14d !important;
+  color: #ffffff !important;
+}
+
+body[data-theme="syndigo"] .filters-panel,
+body[data-theme="syndigo"] .calendar-card,
+body[data-theme="syndigo"] .empty-state,
+body[data-theme="syndigo"] .modal-card {
+  background: #ffffff !important;
+  border: 1px solid #d9dfe8 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body[data-theme="syndigo"] .filters-panel {
+  margin-bottom: 8px !important;
+}
+
+body[data-theme="syndigo"] .filters-inner,
+body[data-theme="syndigo"] .calendar-frame {
+  background: #ffffff !important;
+}
+
+body[data-theme="syndigo"] .filter-card {
+  background: #ffffff !important;
+  border: 1px solid #d9dfe8 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
+body[data-theme="syndigo"] .filter-label {
+  color: #5c6a7d !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+}
+
+body[data-theme="syndigo"] select[multiple] {
+  background: #ffffff !important;
+  color: #344054 !important;
+  border: 1px solid #cfd6e2 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
+body[data-theme="syndigo"] select[multiple] option {
+  background: #ffffff !important;
+  color: #344054 !important;
+}
+
+body[data-theme="syndigo"] select[multiple] option:checked,
+body[data-theme="syndigo"] select[multiple] option[selected] {
+  background: #dcecff !important;
+  color: #1c4f92 !important;
+}
+
+body[data-theme="syndigo"] .empty-state h2,
+body[data-theme="syndigo"] .modal-title,
+body[data-theme="syndigo"] .event-card-title,
+body[data-theme="syndigo"] .fc .fc-col-header-cell-cushion,
+body[data-theme="syndigo"] .fc .fc-daygrid-day-number,
+body[data-theme="syndigo"] .fc .fc-list-day-text,
+body[data-theme="syndigo"] .fc .fc-list-day-side-text {
+  color: #2f3b52 !important;
+}
+
+body[data-theme="syndigo"] .modal-backdrop {
+  background: rgba(22, 32, 52, 0.28) !important;
+  backdrop-filter: blur(3px) !important;
+}
+
+body[data-theme="syndigo"] .modal-header,
+body[data-theme="syndigo"] .modal-footer {
+  background: #f7f9fc !important;
+  border-color: #d9dfe8 !important;
+}
+
+body[data-theme="syndigo"] .fc {
+  --fc-border-color: #d9dfe8 !important;
+  --fc-page-bg-color: transparent !important;
+  --fc-neutral-bg-color: #ffffff !important;
+  --fc-today-bg-color: rgba(26,115,217,0.06) !important;
+  color: #2f3b52 !important;
+}
+
+body[data-theme="syndigo"] .fc .fc-scrollgrid,
+body[data-theme="syndigo"] .fc .fc-theme-standard td,
+body[data-theme="syndigo"] .fc .fc-theme-standard th {
+  border-color: #d9dfe8 !important;
+}
+
+body[data-theme="syndigo"] .fc .fc-scrollgrid {
+  background: #ffffff !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+body[data-theme="syndigo"] .fc .fc-col-header-cell,
+body[data-theme="syndigo"] .fc .fc-list-day-cushion {
+  background: #edf2fb !important;
+}
+
+body[data-theme="syndigo"] .fc .fc-daygrid-day-frame {
+  min-height: 128px !important;
+  background: #ffffff !important;
+}
+
+body[data-theme="syndigo"] .fc-daygrid-event,
+body[data-theme="syndigo"] .fc-list-event,
+body[data-theme="syndigo"] .fc .fc-timegrid-event,
+body[data-theme="syndigo"] .fc .fc-timegrid-event .fc-event-main {
+  background: #f7fbff !important;
+  border: 1px solid #cfe0f6 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
+body[data-theme="syndigo"] .fc .fc-list-event:hover td,
+body[data-theme="syndigo"] .fc-daygrid-event:hover,
+body[data-theme="syndigo"] .fc-list-event:hover {
+  background: #eef6ff !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+body[data-theme="syndigo"] .theme-menu-overlay-fixed,
+body[data-theme="syndigo"] #themeMenuPortal,
+body[data-theme="syndigo"] .theme-popover {
+  background: #ffffff !important;
+  border: 1px solid #cfd6e2 !important;
+  border-radius: 4px !important;
+  box-shadow: 0 8px 18px rgba(33, 52, 84, 0.12) !important;
+}
+
+body[data-theme="syndigo"] .theme-menu-overlay-fixed button,
+body[data-theme="syndigo"] #themeMenuPortal button,
+body[data-theme="syndigo"] .theme-option {
+  background: transparent !important;
+  color: #324255 !important;
+  border-radius: 4px !important;
+}
+
+body[data-theme="syndigo"] .theme-menu-overlay-fixed button:hover,
+body[data-theme="syndigo"] #themeMenuPortal button:hover,
+body[data-theme="syndigo"] .theme-option:hover,
+body[data-theme="syndigo"] .theme-menu-overlay-fixed button.active,
+body[data-theme="syndigo"] #themeMenuPortal button.active,
+body[data-theme="syndigo"] .theme-option.active {
+  background: #eaf3ff !important;
+  color: #1c4f92 !important;
+}
+
+body[data-theme="syndigo"] .theme-option-check {
+  color: #1a73d9 !important;
+}
+</style>
+
+
+
+<style id="syndigo-left-nav-fixes-v3">
+body[data-theme="syndigo"] .syndigo-rail {
+  height: 100vh !important;
+  min-height: 100vh !important;
+  justify-content: flex-start !important;
+  overflow: visible !important;
+}
+body[data-theme="syndigo"] .syndigo-rail-group-top {
+  padding-top: 6px;
+}
+body[data-theme="syndigo"] .syndigo-rail-group-bottom {
+  margin-top: auto !important;
+  padding-bottom: 10px;
+}
+body[data-theme="syndigo"] .syndigo-rail-btn {
+  position: relative;
+  overflow: visible;
+}
+body[data-theme="syndigo"] .syndigo-rail-badge {
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: #59b7ff;
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  box-shadow: 0 0 0 2px #ffffff;
+  display: none;
+}
+body[data-theme="syndigo"] .syndigo-rail-badge.has-value {
+  display: inline-block;
+}
+body[data-theme="syndigo"] #syndigoPanel-theme,
+body[data-theme="syndigo"] #syndigoPanel-navigate {
+  width: 220px;
+}
+body[data-theme="syndigo"] #syndigoPanel-theme .syndigo-popout-body,
+body[data-theme="syndigo"] #syndigoPanel-navigate .syndigo-popout-body {
+  max-height: calc(100vh - 80px);
+}
+</style>
+
+
+<style id="syndigo-left-nav-layout">
+body[data-theme="syndigo"] #appContent {
+  display: grid !important;
+  grid-template-columns: 64px minmax(0, 1fr);
+  grid-template-areas:
+    "rail topbar"
+    "rail calendar";
+  gap: 10px;
+  align-items: start;
+}
+body[data-theme="syndigo"] .syndigo-rail {
+  grid-area: rail;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  min-height: calc(100vh - 18px);
+  padding: 8px 0;
+  background: #ffffff;
+  border-right: 1px solid #d7dfeb;
+  position: sticky;
+  top: 0;
+  z-index: 6;
+}
+body:not([data-theme="syndigo"]) .syndigo-rail,
+body:not([data-theme="syndigo"]) .syndigo-popouts { display: none !important; }
+body[data-theme="syndigo"] .topbar { grid-area: topbar !important; }
+body[data-theme="syndigo"] .calendar-card { grid-area: calendar !important; }
+body[data-theme="syndigo"] .filters-panel { display: none !important; }
+body[data-theme="syndigo"] .topbar-row-secondary .topbar-zone-left,
+body[data-theme="syndigo"] .topbar-row-secondary .topbar-zone-center,
+body[data-theme="syndigo"] .topbar-row-secondary .topbar-zone-right { display: none !important; }
+body[data-theme="syndigo"] .topbar-row-primary { justify-content: space-between !important; align-items: center !important; }
+body[data-theme="syndigo"] .toolbar-group-status { margin-left: auto !important; }
+body[data-theme="syndigo"] .syndigo-rail-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+body[data-theme="syndigo"] .syndigo-rail-submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+body[data-theme="syndigo"] .syndigo-rail-btn {
+  width: 48px;
+  min-height: 48px;
+  padding: 6px 4px;
+  border: none;
+  background: transparent;
+  color: #72809a;
+  border-radius: 999px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+body[data-theme="syndigo"] .syndigo-rail-btn:hover,
+body[data-theme="syndigo"] .syndigo-rail-btn.is-active,
+body[data-theme="syndigo"] .syndigo-rail-btn.is-expanded {
+  background: #dff1ff;
+  color: #1a73d9;
+}
+body[data-theme="syndigo"] .syndigo-rail-btn-sub { width: 44px; min-height: 44px; }
+body[data-theme="syndigo"] .syndigo-rail-icon { font-size: 16px; line-height: 1; }
+body[data-theme="syndigo"] .syndigo-rail-label { font-size: 9px; font-weight: 600; line-height: 1.1; }
+body[data-theme="syndigo"] .syndigo-popouts {
+  position: fixed;
+  top: 88px;
+  left: 76px;
+  z-index: 50;
+}
+body[data-theme="syndigo"] .syndigo-popout-panel {
+  width: 330px;
+  max-height: calc(100vh - 120px);
+  overflow: auto;
+  background: #ffffff;
+  border: 1px solid #d7dfeb;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(33, 52, 84, 0.14);
+}
+body[data-theme="syndigo"] .syndigo-popout-title {
+  padding: 12px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #50607a;
+  border-bottom: 1px solid #e4e9f1;
+  background: #f5f8fc;
+}
+body[data-theme="syndigo"] .syndigo-popout-body { padding: 12px; background: #ffffff; }
+body[data-theme="syndigo"] .syndigo-popout-stack { display: flex; flex-direction: column; gap: 8px; }
+body[data-theme="syndigo"] .syndigo-popout-action { justify-content: center; }
+body[data-theme="syndigo"] .syndigo-popout-panel .filter-card {
+  margin: 0;
+  border: none !important;
+  padding: 0 !important;
+}
+body[data-theme="syndigo"] .syndigo-popout-panel .filter-card > div[style] { margin-top: 12px !important; }
+body[data-theme="syndigo"] .syndigo-theme-action.is-current,
+body[data-theme="syndigo"] .syndigo-view-action.is-current {
+  background: #dff1ff !important;
+  color: #1a73d9 !important;
+  border-color: #9cc4f3 !important;
+}
+@media (max-width: 980px) {
+  body[data-theme="syndigo"] #appContent {
+    grid-template-columns: 56px minmax(0, 1fr);
+  }
+  body[data-theme="syndigo"] .syndigo-popouts { left: 66px; }
+  body[data-theme="syndigo"] .syndigo-popout-panel { width: min(320px, calc(100vw - 86px)); }
+}
+</style>
+
+
+<style id="syndigo-left-nav-refinement-v4">
+body[data-theme="syndigo"] .topbar {
+  position: relative !important;
+  min-height: 72px !important;
+}
+body[data-theme="syndigo"] .topbar-row-primary {
+  position: relative !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 48px !important;
+}
+body[data-theme="syndigo"] .title-wrap,
+body[data-theme="syndigo"] .title-wrap-compact {
+  width: 100% !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+body[data-theme="syndigo"] .toolbar-group-status {
+  position: absolute !important;
+  right: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin-left: 0 !important;
+}
+body[data-theme="syndigo"] .calendar-card {
+  margin-top: 0 !important;
+  transform: none !important;
+}
+body[data-theme="syndigo"] .calendar-frame,
+body[data-theme="syndigo"] #calendar,
+body[data-theme="syndigo"] .fc,
+body[data-theme="syndigo"] .fc-view-harness,
+body[data-theme="syndigo"] .fc-view-harness-active {
+  margin-top: 0 !important;
+  transform: none !important;
+}
+body[data-theme="syndigo"] .syndigo-popout-panel {
+  margin-top: 0 !important;
+}
+body[data-theme="syndigo"] .syndigo-popout-body .btn,
+body[data-theme="syndigo"] .syndigo-popout-body .file-input-label,
+body[data-theme="syndigo"] .syndigo-theme-action,
+body[data-theme="syndigo"] .syndigo-view-action,
+body[data-theme="syndigo"] .syndigo-nav-action {
+  background: #ffffff !important;
+  color: #425066 !important;
+  border: 1px solid #cfd6e2 !important;
+}
+body[data-theme="syndigo"] .syndigo-popout-body .btn:hover,
+body[data-theme="syndigo"] .syndigo-popout-body .file-input-label:hover,
+body[data-theme="syndigo"] .syndigo-theme-action:hover,
+body[data-theme="syndigo"] .syndigo-view-action:hover,
+body[data-theme="syndigo"] .syndigo-nav-action:hover {
+  background: #f6f8fb !important;
+  color: #425066 !important;
+  border-color: #b8c3d4 !important;
+}
+body[data-theme="syndigo"] .syndigo-theme-action.is-current,
+body[data-theme="syndigo"] .syndigo-view-action.is-current,
+body[data-theme="syndigo"] .syndigo-nav-action.is-current {
+  background: #dff1ff !important;
+  color: #1a73d9 !important;
+  border-color: #9cc4f3 !important;
+}
+body[data-theme="syndigo"] .syndigo-popout-body .btn-primary,
+body[data-theme="syndigo"] .syndigo-popout-body .btn-active,
+body[data-theme="syndigo"] .syndigo-popout-body .view-btn.btn-active,
+body[data-theme="syndigo"] .syndigo-popout-body #todayBtn {
+  background: #ffffff !important;
+  color: #425066 !important;
+  border-color: #cfd6e2 !important;
+}
+@media (max-width: 980px) {
+  body[data-theme="syndigo"] .toolbar-group-status {
+    position: static !important;
+    transform: none !important;
+    justify-content: center !important;
+    margin-top: 8px !important;
+  }
+  body[data-theme="syndigo"] .topbar-row-primary {
+    flex-direction: column !important;
+  }
+}
+</style>
+
+
+<style id="syndigo-calendar-drop-fix-v5">
+body[data-theme="syndigo"] #appContent {
+  grid-template-rows: 72px minmax(0, 1fr) !important;
+}
+body[data-theme="syndigo"] .topbar {
+  height: 72px !important;
+  min-height: 72px !important;
+  max-height: 72px !important;
+  overflow: visible !important;
+  margin: 0 !important;
+}
+body[data-theme="syndigo"] .topbar-row-primary {
+  height: 100% !important;
+  min-height: 0 !important;
+}
+body[data-theme="syndigo"] .calendar-card,
+body[data-theme="syndigo"] .calendar-frame,
+body[data-theme="syndigo"] #calendar,
+body[data-theme="syndigo"] .fc,
+body[data-theme="syndigo"] .fc-view-harness,
+body[data-theme="syndigo"] .fc-view-harness-active {
+  margin-top: 0 !important;
+  top: 0 !important;
+  transform: none !important;
+}
+body[data-theme="syndigo"] .filters-panel {
+  display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  overflow: hidden !important;
+}
+</style>
+
+<script id="syndigo-calendar-drop-runtime-fix-v5">
+(function(){
+  function isSyndigo(){
+    return (document.body.getAttribute('data-theme') || '') === 'syndigo';
+  }
+
+  function lockSyndigoCalendarPosition(){
+    if (!isSyndigo() || window.__syndigoDropFixApplying) return;
+    window.__syndigoDropFixApplying = true;
+    try {
+      var app = document.getElementById('appContent');
+      var topbar = document.querySelector('.topbar');
+      var filtersPanel = document.getElementById('filtersPanel');
+      var targets = [document.querySelector('.calendar-card'), document.querySelector('.calendar-frame'), document.getElementById('calendar'), document.querySelector('.fc'), document.querySelector('.fc-view-harness'), document.querySelector('.fc-view-harness-active')];
+
+      if (app && app.style.gridTemplateRows !== '72px minmax(0, 1fr)') app.style.gridTemplateRows = '72px minmax(0, 1fr)';
+      if (topbar) {
+        if (topbar.style.height !== '72px') topbar.style.height = '72px';
+        if (topbar.style.minHeight !== '72px') topbar.style.minHeight = '72px';
+        if (topbar.style.maxHeight !== '72px') topbar.style.maxHeight = '72px';
+      }
+      if (filtersPanel) {
+        if (filtersPanel.style.display !== 'none') filtersPanel.style.display = 'none';
+        if (!filtersPanel.hidden) filtersPanel.hidden = true;
+        if (filtersPanel.classList.contains('open')) filtersPanel.classList.remove('open');
+      }
+
+      targets.forEach(function(el){
+        if (!el) return;
+        if (el.style.marginTop !== '0px') el.style.marginTop = '0px';
+        if (el.style.top !== '0px') el.style.top = '0px';
+        if (el.style.transform !== 'none') el.style.transform = 'none';
+        if (el.style.translate !== 'none') el.style.translate = 'none';
+      });
+    } finally {
+      setTimeout(function(){ window.__syndigoDropFixApplying = false; }, 0);
+    }
+  }
+
+  function bind(){
+    ['salesEngineerFilter','activityTypeFilter','engagementFilter'].forEach(function(id){
+      var el = document.getElementById(id);
+      if (!el || el.dataset.syndigoDropFixBound === 'true') return;
+      el.dataset.syndigoDropFixBound = 'true';
+      ['change','click','input','mouseup'].forEach(function(evt){
+        el.addEventListener(evt, function(){
+          setTimeout(lockSyndigoCalendarPosition, 0);
+          setTimeout(lockSyndigoCalendarPosition, 40);
+        }, true);
+      });
+    });
+
+    var applyFiltersFn = window.applyFilters || (typeof applyFilters === 'function' ? applyFilters : null);
+    if (applyFiltersFn && !window.__syndigoApplyFiltersDropFixWrapped) {
+      window.__syndigoApplyFiltersDropFixWrapped = true;
+      window.applyFilters = function(){
+        var result = applyFiltersFn.apply(this, arguments);
+        setTimeout(lockSyndigoCalendarPosition, 0);
+        setTimeout(lockSyndigoCalendarPosition, 40);
+        return result;
+      };
+    }
+
+    var observerTarget = document.getElementById('appContent');
+    if (observerTarget && !window.__syndigoDropFixObserver) {
+      window.__syndigoDropFixObserver = new MutationObserver(function(){
+        if (window.__syndigoDropFixApplying || !isSyndigo()) return;
+        lockSyndigoCalendarPosition();
+      });
+      window.__syndigoDropFixObserver.observe(observerTarget, {attributes:true, childList:false, subtree:true, attributeFilter:['style','class','hidden']});
+    }
+  }
+
+  function init(){
+    lockSyndigoCalendarPosition();
+    bind();
+    window.addEventListener('resize', lockSyndigoCalendarPosition);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+
+<style id="syndigo-layout-pin-and-polish-v6">
+body[data-theme="syndigo"] #appContent {
+  grid-template-rows: auto minmax(0, 1fr) !important;
+  min-height: 100vh !important;
+}
+body[data-theme="syndigo"] .filters-panel,
+body[data-theme="syndigo"] #filtersPanel {
+  position: absolute !important;
+  inset: 0 auto auto 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+body[data-theme="syndigo"] .calendar-card,
+body[data-theme="syndigo"] .calendar-frame,
+body[data-theme="syndigo"] #calendar {
+  margin-top: 0 !important;
+  top: auto !important;
+  transform: none !important;
+}
+body[data-theme="syndigo"] .calendar-card {
+  align-self: start !important;
+}
+body[data-theme="syndigo"] .syndigo-rail {
+  height: 100vh !important;
+  min-height: 100vh !important;
+  max-height: 100vh !important;
+}
+body[data-theme="syndigo"] .syndigo-rail-group-bottom {
+  margin-top: auto !important;
+  padding-bottom: 10px !important;
+}
+body[data-theme="syndigo"] .syndigo-popouts {
+  z-index: 200 !important;
+}
+body[data-theme="syndigo"] .syndigo-popout-panel {
+  position: relative;
+  border-radius: 10px !important;
+  box-shadow: 0 14px 34px rgba(33, 52, 84, 0.16) !important;
+}
+body[data-theme="syndigo"] .syndigo-popout-panel::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 18px;
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border-left: 1px solid #d7dfeb;
+  border-top: 1px solid #d7dfeb;
+  transform: rotate(-45deg);
+  border-top-left-radius: 2px;
+}
+body[data-theme="syndigo"] .syndigo-popout-title {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body[data-theme="syndigo"] .syndigo-popout-body {
+  position: relative;
+}
+</style>
+
+
+
+<style id="calendar-sizing-and-toolbar-clearance-v12">
+/* v12: prevent top controls from sitting over the calendar in the non-rail themes */
+body:not([data-theme="startrek"]):not([data-theme="syndigo"]) .topbar.topbar-compact {
+  margin-bottom: 28px !important;
+  overflow: visible !important;
+}
+
+body:not([data-theme="startrek"]):not([data-theme="syndigo"]) .calendar-card {
+  margin-top: 0 !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+body:not([data-theme="startrek"]):not([data-theme="syndigo"]) .topbar-row-secondary {
+  margin-top: 4px !important;
+}
+
+/* Keep the calendar inside its available column instead of being clipped on the right. */
+#appContent,
+.calendar-card,
+.calendar-frame,
+#calendar,
+.fc,
+.fc-view-harness,
+.fc-view-harness-active {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+.calendar-card {
+  width: 100% !important;
+}
+
+.calendar-frame {
+  width: 100% !important;
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+#calendar,
+.fc,
+.fc .fc-view-harness,
+.fc .fc-scrollgrid,
+.fc .fc-scrollgrid table,
+.fc .fc-col-header,
+.fc .fc-daygrid-body,
+.fc .fc-daygrid-body table {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* The old mobile safeguard forced a minimum calendar width; that is useful on very small screens,
+   but it clips the calendar when a side rail uses part of the page width. */
+@media (min-width: 721px) {
+  .fc .fc-view-harness,
+  .fc .fc-scrollgrid {
+    min-width: 0 !important;
+  }
+}
+
+/* Star Trek has a fixed side console, so give the calendar room by making the console slightly
+   adaptive and allowing the main grid column to shrink cleanly. */
+body[data-theme="startrek"] #appContent {
+  grid-template-columns: clamp(260px, 19vw, 320px) minmax(0, 1fr) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+body[data-theme="startrek"] .calendar-card,
+body[data-theme="startrek"] .calendar-frame,
+body[data-theme="startrek"] #calendar,
+body[data-theme="startrek"] .fc,
+body[data-theme="startrek"] .fc-view-harness,
+body[data-theme="startrek"] .fc-view-harness-active {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+body[data-theme="startrek"] .calendar-frame {
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+}
+
+body[data-theme="startrek"] .fc .fc-scrollgrid,
+body[data-theme="startrek"] .fc .fc-scrollgrid table,
+body[data-theme="startrek"] .fc .fc-daygrid-body,
+body[data-theme="startrek"] .fc .fc-daygrid-body table {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* At medium widths the Star Trek sidebar plus seven columns can become too tight, so stack it
+   before the calendar starts losing the final day columns. */
+@media (max-width: 1180px) {
+  body[data-theme="startrek"] #appContent {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "sidebar"
+      "filters"
+      "main" !important;
+  }
+
+  body[data-theme="startrek"] .topbar {
+    position: static !important;
+    min-height: 0 !important;
+  }
+}
+
+/* Syndigo already has its own rail model; just make sure the calendar column can shrink. */
+body[data-theme="syndigo"] #appContent {
+  grid-template-columns: 64px minmax(0, 1fr) !important;
+  width: 100% !important;
+}
+
+body[data-theme="syndigo"] .calendar-card,
+body[data-theme="syndigo"] .calendar-frame,
+body[data-theme="syndigo"] #calendar {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+</style>
+
+
+<style id="toolbar-calendar-clearance-v13">
+/* v13: reserve vertical room for the compact toolbar in non-rail themes. */
+body:not([data-theme="startrek"]):not([data-theme="syndigo"]) .calendar-card {
+  margin-top: 56px !important;
+}
+
+body:not([data-theme="startrek"]):not([data-theme="syndigo"]) .filters-panel.open {
+  margin-top: 56px !important;
+  margin-bottom: 16px !important;
+}
+
+body:not([data-theme="startrek"]):not([data-theme="syndigo"]) .filters-panel.open + .calendar-card {
+  margin-top: 0 !important;
+}
+
+body:not([data-theme="startrek"]):not([data-theme="syndigo"]) .topbar.topbar-compact {
+  margin-bottom: 0 !important;
+}
+
+body:not([data-theme="startrek"]):not([data-theme="syndigo"]) .topbar-row-secondary {
+  padding-bottom: 4px !important;
+}
+
+@media (max-width: 980px) {
+  body:not([data-theme="startrek"]):not([data-theme="syndigo"]) .calendar-card {
+    margin-top: 72px !important;
+  }
+  body:not([data-theme="startrek"]):not([data-theme="syndigo"]) .filters-panel.open {
+    margin-top: 72px !important;
+  }
+}
+</style>
 </head>
 <body data-theme="brand" class="theme-brand">
   <div class="app-shell">
@@ -4957,6 +5857,108 @@ body[data-theme="startrek"] .compact-segmented .btn {
     </div>
 
     <div id="appContent" style="display:none;">
+
+      <aside class="syndigo-rail" id="syndigoRail" aria-label="Syndigo navigation">
+        <div class="syndigo-rail-group syndigo-rail-group-top">
+          <button class="syndigo-rail-btn" type="button" data-syndigo-panel="file" title="Replace file">
+            <span class="syndigo-rail-icon">⇪</span>
+            <span class="syndigo-rail-label">File</span>
+          </button>
+          <button class="syndigo-rail-btn" type="button" data-syndigo-expand="filters" title="Filter options">
+            <span class="syndigo-rail-icon">☰</span>
+            <span class="syndigo-rail-label">Filters</span>
+          </button>
+          <div class="syndigo-rail-submenu" id="syndigoFilterSubmenu" hidden>
+            <button class="syndigo-rail-btn syndigo-rail-btn-sub" type="button" data-syndigo-panel="owner" title="Sales engineer filter">
+              <span class="syndigo-rail-icon">◉</span>
+              <span class="syndigo-rail-label">Owner</span>
+            </button>
+            <button class="syndigo-rail-btn syndigo-rail-btn-sub" type="button" data-syndigo-panel="type" title="Activity type filter">
+              <span class="syndigo-rail-icon">▣</span>
+              <span class="syndigo-rail-label">Type</span>
+            </button>
+            <button class="syndigo-rail-btn syndigo-rail-btn-sub" type="button" data-syndigo-panel="engagement" title="Engagement filter">
+              <span class="syndigo-rail-icon">◇</span>
+              <span class="syndigo-rail-label">Engage</span>
+            </button>
+          </div>
+          <button class="syndigo-rail-btn" type="button" data-syndigo-panel="views" title="Calendar view">
+            <span class="syndigo-rail-icon">◫</span>
+            <span class="syndigo-rail-label">Views</span>
+          </button>
+          <button class="syndigo-rail-btn" type="button" data-syndigo-panel="navigate" title="Calendar navigation">
+            <span class="syndigo-rail-icon">↔</span>
+            <span class="syndigo-rail-label">Move</span>
+          </button>
+        </div>
+        <div class="syndigo-rail-group syndigo-rail-group-bottom">
+          <button class="syndigo-rail-btn" type="button" data-syndigo-panel="theme" title="Theme options">
+            <span class="syndigo-rail-icon">◌</span>
+            <span class="syndigo-rail-label">Theme</span>
+          </button>
+          <button class="syndigo-rail-btn" type="button" id="syndigoResetBtn" title="Reset all filters">
+            <span class="syndigo-rail-icon">↺</span>
+            <span class="syndigo-rail-label">Reset</span>
+          </button>
+        </div>
+      </aside>
+
+      <div class="syndigo-popouts" id="syndigoPopouts" aria-hidden="true">
+        <section class="syndigo-popout-panel" id="syndigoPanel-file" hidden>
+          <div class="syndigo-popout-title">File actions</div>
+          <div class="syndigo-popout-body syndigo-popout-stack">
+            <label class="file-input-label btn-primary syndigo-popout-action" for="excelFile">Replace file</label>
+          </div>
+        </section>
+
+        <section class="syndigo-popout-panel" id="syndigoPanel-owner" hidden>
+          <div class="syndigo-popout-title">Sales engineer</div>
+          <div class="syndigo-popout-body" id="syndigoOwnerMount"></div>
+        </section>
+
+        <section class="syndigo-popout-panel" id="syndigoPanel-type" hidden>
+          <div class="syndigo-popout-title">Activity type</div>
+          <div class="syndigo-popout-body" id="syndigoTypeMount"></div>
+        </section>
+
+        <section class="syndigo-popout-panel" id="syndigoPanel-engagement" hidden>
+          <div class="syndigo-popout-title">Engagement</div>
+          <div class="syndigo-popout-body" id="syndigoEngagementMount"></div>
+        </section>
+
+        <section class="syndigo-popout-panel" id="syndigoPanel-views" hidden>
+          <div class="syndigo-popout-title">Calendar view</div>
+          <div class="syndigo-popout-body syndigo-popout-stack">
+            <button class="btn syndigo-view-action" type="button" data-view="day">Day</button>
+            <button class="btn syndigo-view-action" type="button" data-view="week">Week</button>
+            <button class="btn syndigo-view-action" type="button" data-view="month">Month</button>
+          </div>
+        </section>
+
+        <section class="syndigo-popout-panel" id="syndigoPanel-navigate" hidden>
+          <div class="syndigo-popout-title">Calendar navigation</div>
+          <div class="syndigo-popout-body syndigo-popout-stack">
+            <button class="btn syndigo-nav-action" type="button" data-nav="prev">Previous</button>
+            <button class="btn btn-primary syndigo-nav-action" type="button" data-nav="today">Today</button>
+            <button class="btn syndigo-nav-action" type="button" data-nav="next">Next</button>
+          </div>
+        </section>
+
+        <section class="syndigo-popout-panel" id="syndigoPanel-theme" hidden>
+          <div class="syndigo-popout-title">Theme</div>
+          <div class="syndigo-popout-body syndigo-popout-stack">
+            <button class="btn syndigo-theme-action" type="button" data-theme-choice="brand">Brand</button>
+            <button class="btn syndigo-theme-action" type="button" data-theme-choice="classic">Original</button>
+            <button class="btn syndigo-theme-action" type="button" data-theme-choice="springfield">Springfield</button>
+            <button class="btn syndigo-theme-action" type="button" data-theme-choice="noir">Film Noir</button>
+            <button class="btn syndigo-theme-action" type="button" data-theme-choice="glass">Glass</button>
+            <button class="btn syndigo-theme-action" type="button" data-theme-choice="startrek">Star Trek</button>
+            <button class="btn syndigo-theme-action" type="button" data-theme-choice="redalert">Red Alert</button>
+            <button class="btn syndigo-theme-action" type="button" data-theme-choice="syndigo">Syndigo</button>
+          </div>
+        </section>
+      </div>
+
       <section class="topbar topbar-compact">
         <div class="topbar-row topbar-row-primary">
           <div class="title-wrap title-wrap-compact">
@@ -5090,12 +6092,16 @@ body[data-theme="startrek"] .compact-segmented .btn {
         themeTrigger.style.color = '#f8fbff';
         themeTrigger.style.background = 'rgba(255,255,255,0.14)';
         themeTrigger.style.borderColor = 'rgba(255,255,255,0.24)';
+      } else if (theme === 'syndigo') {
+        themeTrigger.style.color = '#425066';
+        themeTrigger.style.background = '#ffffff';
+        themeTrigger.style.borderColor = '#cfd6e2';
       }
     }
 
     function applyTheme(theme) {
-      const safeTheme = ['brand', 'classic', 'springfield', 'noir', 'glass', 'startrek', 'redalert'].includes(theme) ? theme : 'brand';
-      const themeClasses = ['theme-brand', 'theme-classic', 'theme-springfield', 'theme-noir', 'theme-glass'];
+      const safeTheme = ['brand', 'classic', 'springfield', 'noir', 'glass', 'startrek', 'redalert', 'syndigo'].includes(theme) ? theme : 'brand';
+      const themeClasses = ['theme-brand', 'theme-classic', 'theme-springfield', 'theme-noir', 'theme-glass', 'theme-syndigo'];
       document.body.setAttribute('data-theme', safeTheme);
       document.documentElement.setAttribute('data-theme', safeTheme);
       document.body.classList.remove(...themeClasses);
@@ -5110,7 +6116,8 @@ body[data-theme="startrek"] .compact-segmented .btn {
         { id: 'themeNoirBtn', theme: 'noir' },
         { id: 'themeGlassBtn', theme: 'glass' },
         { id: 'themeStarTrekBtn', theme: 'startrek' },
-        { id: 'themeRedAlertBtn', theme: 'redalert' }
+        { id: 'themeRedAlertBtn', theme: 'redalert' },
+        { id: 'themeSyndigoBtn', theme: 'syndigo' }
       ];
 
       themeButtons.forEach(({ id, theme }) => {
@@ -5131,7 +6138,7 @@ body[data-theme="startrek"] .compact-segmented .btn {
           glass: 'Glass',
           startrek: 'Star Trek',
           redalert: 'Red Alert',
-          redalert: 'Red Alert'
+          syndigo: 'Syndigo'
         };
         themeMenuButton.textContent = labelMap[safeTheme] || 'Theme';
       }
@@ -5147,7 +6154,7 @@ body[data-theme="startrek"] .compact-segmented .btn {
       let savedTheme = 'brand';
       try {
         savedTheme = localStorage.getItem('demoforceCalendarTheme') || 'brand';
-        if (!['brand', 'classic', 'springfield', 'noir', 'glass', 'startrek', 'redalert'].includes(savedTheme)) savedTheme = 'brand';
+        if (!['brand', 'classic', 'springfield', 'noir', 'glass', 'startrek', 'redalert', 'syndigo'].includes(savedTheme)) savedTheme = 'brand';
       } catch (e) {}
       applyTheme(savedTheme);
     }
@@ -5645,11 +6652,28 @@ body[data-theme="startrek"] .compact-segmented .btn {
       reader.readAsArrayBuffer(file);
     }
 
-    document.getElementById('excelFile').addEventListener('change', e => {
-      const file = e.target.files[0];
-      if (!file) return;
-      parseExcelFile(file);
-    });
+    function bindExcelUploadInput() {
+      const excelInput = document.getElementById('excelFile');
+      if (!excelInput) {
+        console.error('Excel input not found');
+        return;
+      }
+
+      if (excelInput.dataset.uploadBound === 'true') return;
+      excelInput.dataset.uploadBound = 'true';
+
+      excelInput.addEventListener('click', () => {
+        excelInput.value = '';
+      });
+
+      excelInput.addEventListener('change', e => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        parseExcelFile(file);
+      });
+    }
+
+    bindExcelUploadInput();
 
     document.getElementById('prevBtn').addEventListener('click', () => calendar && calendar.prev());
     document.getElementById('nextBtn').addEventListener('click', () => calendar && calendar.next());
@@ -5848,7 +6872,8 @@ body[data-theme="startrek"] .compact-segmented .btn {
     '<button type="button" data-theme="noir">Film Noir</button>' +
     '<button type="button" data-theme="glass">Glass</button>' +
     '<button type="button" data-theme="startrek">Star Trek</button>' +
-    '<button type="button" data-theme="redalert">Red Alert</button>';
+    '<button type="button" data-theme="redalert">Red Alert</button>' +
+    '<button type="button" data-theme="syndigo">Syndigo</button>';
   wrap.appendChild(menu);
 
   function syncButtons(theme) {
@@ -5935,7 +6960,8 @@ body[data-theme="startrek"] .compact-segmented .btn {
     '<button type="button" data-theme="noir">Film Noir</button>' +
     '<button type="button" data-theme="glass">Glass</button>' +
     '<button type="button" data-theme="startrek">Star Trek</button>' +
-    '<button type="button" data-theme="redalert">Red Alert</button>';
+    '<button type="button" data-theme="redalert">Red Alert</button>' +
+    '<button type="button" data-theme="syndigo">Syndigo</button>';
   document.body.appendChild(portal);
 
   function getTheme() {
@@ -6264,6 +7290,702 @@ document.addEventListener('click', function (e) {
   }
 
   setButtonLabel(document.body.getAttribute('data-theme')||'brand');
+})();
+</script>
+
+<script id="startrek-filter-buttons-hard-fix">
+(function(){
+  function isStartrek(){
+    return (document.body.getAttribute('data-theme') || '') === 'startrek';
+  }
+
+  function refreshSelections(){
+    ['salesEngineerFilter','activityTypeFilter','engagementFilter'].forEach(function(id){
+      var sel = document.getElementById(id);
+      if(!sel) return;
+      Array.prototype.forEach.call(sel.options, function(opt){
+        if(opt.selected) opt.setAttribute('selected','selected');
+        else opt.removeAttribute('selected');
+      });
+    });
+  }
+
+  function clearSelect(id){
+    var sel = document.getElementById(id);
+    if(!sel) return;
+    for (var i = 0; i < sel.options.length; i++) {
+      sel.options[i].selected = false;
+      sel.options[i].removeAttribute('selected');
+    }
+    sel.selectedIndex = -1;
+  }
+
+  function applyAfterReset(){
+    refreshSelections();
+    if (typeof window.applyFilters === 'function') {
+      window.applyFilters();
+    }
+  }
+
+  function bindButton(id, fn){
+    var btn = document.getElementById(id);
+    if(!btn || btn.dataset.startrekFixed === '1') return;
+    btn.dataset.startrekFixed = '1';
+    btn.addEventListener('click', function(e){
+      if(!isStartrek()) return;
+      e.preventDefault();
+      e.stopPropagation();
+      fn();
+    }, true);
+  }
+
+  function syncStartrekFilterButtons(){
+    var toggleBtn = document.getElementById('toggleFiltersBtn');
+    var filtersPanel = document.getElementById('filtersPanel');
+    if (isStartrek()) {
+      if (filtersPanel) filtersPanel.classList.add('open');
+      if (toggleBtn) {
+        toggleBtn.textContent = 'Reset filters';
+        toggleBtn.title = 'Reset all filters';
+      }
+    }
+
+    bindButton('toggleFiltersBtn', function(){
+      clearSelect('salesEngineerFilter');
+      clearSelect('activityTypeFilter');
+      clearSelect('engagementFilter');
+      applyAfterReset();
+    });
+
+    bindButton('resetSalesFilterButton', function(){
+      clearSelect('salesEngineerFilter');
+      applyAfterReset();
+    });
+
+    bindButton('resetActivityFilterButton', function(){
+      clearSelect('activityTypeFilter');
+      applyAfterReset();
+    });
+
+    bindButton('resetEngagementFilterButton', function(){
+      clearSelect('engagementFilter');
+      applyAfterReset();
+    });
+  }
+
+  var originalApplyTheme = window.applyTheme || (typeof applyTheme === 'function' ? applyTheme : null);
+  if (originalApplyTheme && !window.__startrekFilterButtonsHardFixWrapped) {
+    window.__startrekFilterButtonsHardFixWrapped = true;
+    window.applyTheme = function(theme){
+      originalApplyTheme(theme);
+      setTimeout(syncStartrekFilterButtons, 0);
+    };
+  }
+
+  document.addEventListener('DOMContentLoaded', syncStartrekFilterButtons);
+  setTimeout(syncStartrekFilterButtons, 0);
+  setTimeout(syncStartrekFilterButtons, 300);
+})();
+</script>
+
+
+<script id="syndigo-left-nav-runtime">
+(function(){
+  if (window.__syndigoLeftNavInit) return;
+  window.__syndigoLeftNavInit = true;
+
+  var body = document.body;
+  var filtersGrid = document.querySelector('.filters-grid');
+  var ownerMount = document.getElementById('syndigoOwnerMount');
+  var typeMount = document.getElementById('syndigoTypeMount');
+  var engagementMount = document.getElementById('syndigoEngagementMount');
+  var rail = document.getElementById('syndigoRail');
+  var popouts = document.getElementById('syndigoPopouts');
+  var submenu = document.getElementById('syndigoFilterSubmenu');
+  var originalPositions = [];
+  var currentPanel = null;
+
+  function captureCards() {
+    if (!filtersGrid || originalPositions.length) return;
+    var cards = filtersGrid.querySelectorAll('.filter-card');
+    Array.prototype.forEach.call(cards, function(card, index){
+      originalPositions.push({ card: card, index: index });
+    });
+  }
+
+  function moveCardsForTheme(theme) {
+    captureCards();
+    if (!originalPositions.length) return;
+    if (theme === 'syndigo') {
+      if (ownerMount && originalPositions[0] && originalPositions[0].card.parentElement !== ownerMount) ownerMount.appendChild(originalPositions[0].card);
+      if (typeMount && originalPositions[1] && originalPositions[1].card.parentElement !== typeMount) typeMount.appendChild(originalPositions[1].card);
+      if (engagementMount && originalPositions[2] && originalPositions[2].card.parentElement !== engagementMount) engagementMount.appendChild(originalPositions[2].card);
+    } else if (filtersGrid) {
+      originalPositions.sort(function(a,b){ return a.index - b.index; }).forEach(function(item){
+        if (item.card.parentElement !== filtersGrid) filtersGrid.appendChild(item.card);
+      });
+    }
+  }
+
+  function isSyndigo() {
+    return (body.getAttribute('data-theme') || '') === 'syndigo';
+  }
+
+  function closeSyndigoPanels() {
+    currentPanel = null;
+    if (popouts) popouts.setAttribute('aria-hidden', 'true');
+    document.querySelectorAll('.syndigo-popout-panel').forEach(function(panel){ panel.hidden = true; });
+    document.querySelectorAll('.syndigo-rail-btn').forEach(function(btn){ btn.classList.remove('is-active'); });
+  }
+
+  function syncThemeButtons() {
+    var currentTheme = body.getAttribute('data-theme') || 'brand';
+    document.querySelectorAll('.syndigo-theme-action').forEach(function(btn){
+      btn.classList.toggle('is-current', btn.getAttribute('data-theme-choice') === currentTheme);
+    });
+  }
+
+  function syncViewButtons() {
+    document.querySelectorAll('.syndigo-view-action').forEach(function(btn){
+      btn.classList.toggle('is-current', btn.getAttribute('data-view') === (window.currentViewMode || 'week'));
+    });
+  }
+
+  function openPanel(name, anchorBtn) {
+    if (!isSyndigo()) return;
+    var panel = document.getElementById('syndigoPanel-' + name);
+    if (!panel || !rail || !popouts) return;
+    if (currentPanel === name) {
+      closeSyndigoPanels();
+      return;
+    }
+    closeSyndigoPanels();
+    currentPanel = name;
+    panel.hidden = false;
+    popouts.setAttribute('aria-hidden', 'false');
+    if (anchorBtn) anchorBtn.classList.add('is-active');
+    var rect = anchorBtn ? anchorBtn.getBoundingClientRect() : rail.getBoundingClientRect();
+    popouts.style.top = Math.max(88, rect.top - 6) + 'px';
+    popouts.style.left = (rect.right + 10) + 'px';
+    syncThemeButtons();
+    syncViewButtons();
+  }
+
+  function toggleFilterSubmenu(forceOpen) {
+    if (!submenu) return;
+    var shouldOpen = typeof forceOpen === 'boolean' ? forceOpen : submenu.hidden;
+    submenu.hidden = !shouldOpen;
+    var trigger = document.querySelector('[data-syndigo-expand="filters"]');
+    if (trigger) trigger.classList.toggle('is-expanded', shouldOpen);
+    if (!shouldOpen) {
+      ['owner','type','engagement'].forEach(function(name){
+        if (currentPanel === name) closeSyndigoPanels();
+      });
+    }
+  }
+
+  function resetAllFiltersFromRail() {
+    if (typeof clearAllFilters === 'function') {
+      clearAllFilters();
+    }
+    closeSyndigoPanels();
+  }
+
+  document.querySelectorAll('[data-syndigo-panel]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      if (!isSyndigo()) return;
+      e.preventDefault();
+      e.stopPropagation();
+      openPanel(btn.getAttribute('data-syndigo-panel'), btn);
+    });
+  });
+
+  var filterExpandBtn = document.querySelector('[data-syndigo-expand="filters"]');
+  if (filterExpandBtn) {
+    filterExpandBtn.addEventListener('click', function(e){
+      if (!isSyndigo()) return;
+      e.preventDefault();
+      e.stopPropagation();
+      toggleFilterSubmenu();
+    });
+  }
+
+  var resetBtn = document.getElementById('syndigoResetBtn');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function(e){
+      if (!isSyndigo()) return;
+      e.preventDefault();
+      e.stopPropagation();
+      resetAllFiltersFromRail();
+    });
+  }
+
+  document.querySelectorAll('.syndigo-view-action').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if (typeof changeView === 'function') changeView(btn.getAttribute('data-view'));
+      syncViewButtons();
+    });
+  });
+
+  document.querySelectorAll('.syndigo-nav-action').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if (!window.calendar) return;
+      var nav = btn.getAttribute('data-nav');
+      if (nav === 'prev') window.calendar.prev();
+      if (nav === 'today') window.calendar.today();
+      if (nav === 'next') window.calendar.next();
+    });
+  });
+
+  document.querySelectorAll('.syndigo-theme-action').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var chosen = btn.getAttribute('data-theme-choice');
+      if (typeof applyTheme === 'function' && chosen) applyTheme(chosen);
+      syncThemeButtons();
+      if (chosen !== 'syndigo') closeSyndigoPanels();
+    });
+  });
+
+  document.addEventListener('click', function(e){
+    if (!isSyndigo()) return;
+    var insideRail = e.target.closest('.syndigo-rail');
+    var insidePopout = e.target.closest('.syndigo-popouts');
+    if (!insideRail && !insidePopout) closeSyndigoPanels();
+  });
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeSyndigoPanels();
+  });
+
+  var originalApplyTheme = window.applyTheme || (typeof applyTheme === 'function' ? applyTheme : null);
+  if (originalApplyTheme && !window.__syndigoApplyWrapped) {
+    window.__syndigoApplyWrapped = true;
+    window.applyTheme = function(theme) {
+      originalApplyTheme(theme);
+      moveCardsForTheme(theme);
+      if (theme === 'syndigo') {
+        toggleFilterSubmenu(false);
+        syncThemeButtons();
+        syncViewButtons();
+      } else {
+        toggleFilterSubmenu(false);
+        closeSyndigoPanels();
+      }
+    };
+  }
+
+  var originalChangeView = window.changeView || (typeof changeView === 'function' ? changeView : null);
+  if (originalChangeView && !window.__syndigoChangeViewWrapped) {
+    window.__syndigoChangeViewWrapped = true;
+    window.changeView = function(view) {
+      var result = originalChangeView(view);
+      syncViewButtons();
+      return result;
+    };
+  }
+
+  captureCards();
+  moveCardsForTheme(body.getAttribute('data-theme') || 'brand');
+  syncThemeButtons();
+  syncViewButtons();
+})();
+</script>
+
+
+<script id="syndigo-left-nav-fixes-runtime-v3">
+(function(){
+  function ensureBadge(button, key) {
+    if (!button) return null;
+    var badge = button.querySelector('.syndigo-rail-badge');
+    if (!badge) {
+      badge = document.createElement('span');
+      badge.className = 'syndigo-rail-badge';
+      badge.setAttribute('data-badge-key', key || '');
+      button.appendChild(badge);
+    }
+    return badge;
+  }
+
+  function selectedCount(selectId) {
+    var el = document.getElementById(selectId);
+    if (!el) return 0;
+    return Array.prototype.filter.call(el.options || [], function(opt){ return opt.selected; }).length;
+  }
+
+  function updateSyndigoRailBadges() {
+    var ownerCount = selectedCount('salesEngineerFilter');
+    var typeCount = selectedCount('activityTypeFilter');
+    var engagementCount = selectedCount('engagementFilter');
+    var totalCount = ownerCount + typeCount + engagementCount;
+
+    var map = [
+      ['[data-syndigo-expand="filters"]', totalCount],
+      ['[data-syndigo-panel="owner"]', ownerCount],
+      ['[data-syndigo-panel="type"]', typeCount],
+      ['[data-syndigo-panel="engagement"]', engagementCount]
+    ];
+
+    map.forEach(function(entry){
+      var btn = document.querySelector(entry[0]);
+      var badge = ensureBadge(btn, entry[0]);
+      if (!badge) return;
+      var value = entry[1];
+      if (value > 0) {
+        badge.textContent = value > 99 ? '99+' : String(value);
+        badge.classList.add('has-value');
+      } else {
+        badge.textContent = '';
+        badge.classList.remove('has-value');
+      }
+    });
+  }
+
+  function positionSyndigoPanel(name, anchorBtn) {
+    var rail = document.getElementById('syndigoRail');
+    var popouts = document.getElementById('syndigoPopouts');
+    var panel = document.getElementById('syndigoPanel-' + name);
+    if (!rail || !popouts || !panel || !anchorBtn) return;
+
+    var rect = anchorBtn.getBoundingClientRect();
+    popouts.style.left = (rect.right + 10) + 'px';
+
+    panel.hidden = false;
+    popouts.style.visibility = 'hidden';
+    popouts.setAttribute('aria-hidden', 'false');
+
+    var panelHeight = Math.ceil(panel.offsetHeight || 0) || 260;
+    var viewportPadding = 14;
+    var desiredTop = rect.top - 6;
+    var maxTop = Math.max(viewportPadding, window.innerHeight - panelHeight - viewportPadding);
+    var finalTop = Math.max(viewportPadding, Math.min(desiredTop, maxTop));
+
+    popouts.style.top = finalTop + 'px';
+    popouts.style.visibility = '';
+  }
+
+  function wireSyndigoNavActions() {
+    document.querySelectorAll('.syndigo-nav-action').forEach(function(btn){
+      if (btn.dataset.syndigoNavBound === 'true') return;
+      btn.dataset.syndigoNavBound = 'true';
+      btn.addEventListener('click', function(){
+        var nav = btn.getAttribute('data-nav');
+        var targetId = nav === 'prev' ? 'prevBtn' : (nav === 'today' ? 'todayBtn' : 'nextBtn');
+        var target = document.getElementById(targetId);
+        if (target) target.click();
+      });
+    });
+  }
+
+  function enhanceSyndigoResetLabel() {
+    var btn = document.getElementById('syndigoResetBtn');
+    if (!btn) return;
+    var label = btn.querySelector('.syndigo-rail-label');
+    if (label) label.textContent = 'Reset all';
+    btn.setAttribute('title', 'Reset all filters');
+  }
+
+  function wrapUpdateFilterSummary() {
+    if (window.__syndigoBadgeSummaryWrapped) return;
+    var original = window.updateFilterSummary || (typeof updateFilterSummary === 'function' ? updateFilterSummary : null);
+    if (!original) return;
+    window.__syndigoBadgeSummaryWrapped = true;
+    window.updateFilterSummary = function() {
+      var result = original.apply(this, arguments);
+      updateSyndigoRailBadges();
+      return result;
+    };
+  }
+
+  function wrapOpenPanel() {
+    if (window.__syndigoOpenPanelWrapped) return;
+    var runtimeScript = document.getElementById('syndigo-left-nav-runtime');
+    if (!runtimeScript) return;
+    window.__syndigoOpenPanelWrapped = true;
+    var originalAdd = EventTarget.prototype.addEventListener;
+    // no-op placeholder, direct wrapper below via poll
+  }
+
+  function installOpenPanelPatch() {
+    if (window.__syndigoPanelPatchInstalled) return;
+    var tries = 0;
+    var timer = setInterval(function(){
+      tries += 1;
+      if (typeof window.openPanel === 'function') {
+        clearInterval(timer);
+        return;
+      }
+      if (tries > 2) clearInterval(timer);
+    }, 50);
+  }
+
+  function patchInlineRuntime() {
+    if (window.__syndigoPanelRuntimePatched) return;
+    window.__syndigoPanelRuntimePatched = true;
+
+    var originalClose = window.closeSyndigoPanels;
+    if (typeof originalClose === 'function') {
+      window.closeSyndigoPanels = function() {
+        var result = originalClose.apply(this, arguments);
+        return result;
+      };
+    }
+  }
+
+  function rebindRailButtons() {
+    document.querySelectorAll('[data-syndigo-panel]').forEach(function(btn){
+      if (btn.dataset.syndigoPanelBound === 'v3') return;
+      btn.dataset.syndigoPanelBound = 'v3';
+      btn.addEventListener('click', function(){
+        if ((document.body.getAttribute('data-theme') || '') !== 'syndigo') return;
+        setTimeout(function(){
+          var panelName = btn.getAttribute('data-syndigo-panel');
+          positionSyndigoPanel(panelName, btn);
+        }, 0);
+      }, true);
+    });
+
+    var expandBtn = document.querySelector('[data-syndigo-expand="filters"]');
+    if (expandBtn && expandBtn.dataset.syndigoExpandBound !== 'v3') {
+      expandBtn.dataset.syndigoExpandBound = 'v3';
+      expandBtn.addEventListener('click', function(){
+        setTimeout(updateSyndigoRailBadges, 0);
+      }, true);
+    }
+  }
+
+  function init() {
+    enhanceSyndigoResetLabel();
+    wrapUpdateFilterSummary();
+    wireSyndigoNavActions();
+    rebindRailButtons();
+    updateSyndigoRailBadges();
+
+    ['salesEngineerFilter', 'activityTypeFilter', 'engagementFilter'].forEach(function(id){
+      var el = document.getElementById(id);
+      if (!el || el.dataset.syndigoBadgeBound === 'true') return;
+      el.dataset.syndigoBadgeBound = 'true';
+      el.addEventListener('change', updateSyndigoRailBadges);
+    });
+
+    window.addEventListener('resize', function(){
+      var activeBtn = document.querySelector('.syndigo-rail-btn.is-active[data-syndigo-panel]');
+      if (!activeBtn) return;
+      positionSyndigoPanel(activeBtn.getAttribute('data-syndigo-panel'), activeBtn);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+
+<script id="syndigo-layout-runtime-v4">
+(function(){
+  function isSyndigo() {
+    return (document.body.getAttribute('data-theme') || '') === 'syndigo';
+  }
+
+  function keepSyndigoCalendarPinned() {
+    if (!isSyndigo()) return;
+    var card = document.querySelector('.calendar-card');
+    var frame = document.querySelector('.calendar-frame');
+    var calendarEl = document.getElementById('calendar');
+    [card, frame, calendarEl].forEach(function(el){
+      if (!el) return;
+      el.style.marginTop = '0px';
+      el.style.transform = 'none';
+      el.style.top = 'auto';
+    });
+    var filtersPanel = document.getElementById('filtersPanel');
+    if (filtersPanel) {
+      filtersPanel.style.display = 'none';
+      filtersPanel.hidden = true;
+    }
+  }
+
+  function syncSyndigoNavSelection() {
+    if (!isSyndigo()) return;
+    document.querySelectorAll('.syndigo-nav-action').forEach(function(btn){
+      btn.classList.remove('is-current');
+    });
+    var today = document.querySelector('.syndigo-nav-action[data-nav="today"]');
+    if (today) today.classList.add('is-current');
+  }
+
+  function bindSyndigoNavSelection() {
+    document.querySelectorAll('.syndigo-nav-action').forEach(function(btn){
+      if (btn.dataset.syndigoNavSelectBound === 'true') return;
+      btn.dataset.syndigoNavSelectBound = 'true';
+      btn.addEventListener('click', function(){
+        document.querySelectorAll('.syndigo-nav-action').forEach(function(item){
+          item.classList.remove('is-current');
+        });
+        btn.classList.add('is-current');
+        setTimeout(keepSyndigoCalendarPinned, 0);
+      });
+    });
+  }
+
+  function bindFilterStability() {
+    ['salesEngineerFilter', 'activityTypeFilter', 'engagementFilter'].forEach(function(id){
+      var el = document.getElementById(id);
+      if (!el || el.dataset.syndigoStabilityBound === 'true') return;
+      el.dataset.syndigoStabilityBound = 'true';
+      el.addEventListener('change', function(){
+        setTimeout(keepSyndigoCalendarPinned, 0);
+      });
+      el.addEventListener('click', function(){
+        setTimeout(keepSyndigoCalendarPinned, 0);
+      });
+    });
+  }
+
+  function init() {
+    keepSyndigoCalendarPinned();
+    bindSyndigoNavSelection();
+    bindFilterStability();
+    syncSyndigoNavSelection();
+    window.addEventListener('resize', keepSyndigoCalendarPinned);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+
+<script id="syndigo-layout-pin-runtime-v6">
+(function(){
+  function isSyndigo() {
+    return (document.body.getAttribute('data-theme') || '') === 'syndigo';
+  }
+
+  function hardPinSyndigoLayout() {
+    if (!isSyndigo() || window.__syndigoLayoutPinApplying) return;
+    window.__syndigoLayoutPinApplying = true;
+    try {
+      var selectors = ['.calendar-card', '.calendar-frame', '#calendar'];
+      selectors.forEach(function(sel){
+        var el = document.querySelector(sel);
+        if (!el) return;
+        if (el.style.marginTop !== '0px') el.style.marginTop = '0px';
+        if (el.style.top !== 'auto') el.style.top = 'auto';
+        if (el.style.transform !== 'none') el.style.transform = 'none';
+      });
+      var panel = document.getElementById('filtersPanel');
+      if (panel) {
+        if (!panel.hidden) panel.hidden = true;
+        if (panel.style.display !== 'none') panel.style.display = 'none';
+        if (panel.style.position !== 'absolute') panel.style.position = 'absolute';
+        if (panel.style.height !== '0px') panel.style.height = '0px';
+        if (panel.style.minHeight !== '0px') panel.style.minHeight = '0px';
+        if (panel.style.maxHeight !== '0px') panel.style.maxHeight = '0px';
+        if (panel.style.margin !== '0px') panel.style.margin = '0px';
+        if (panel.style.padding !== '0px') panel.style.padding = '0px';
+        if (panel.style.overflow !== 'hidden') panel.style.overflow = 'hidden';
+        if (panel.style.opacity !== '0') panel.style.opacity = '0';
+        if (panel.style.visibility !== 'hidden') panel.style.visibility = 'hidden';
+        if (panel.style.pointerEvents !== 'none') panel.style.pointerEvents = 'none';
+        if (panel.style.border !== '0px' && panel.style.border !== '0') panel.style.border = '0';
+        if (panel.style.boxShadow !== 'none') panel.style.boxShadow = 'none';
+      }
+    } finally {
+      setTimeout(function(){ window.__syndigoLayoutPinApplying = false; }, 0);
+    }
+  }
+
+  function positionActiveSyndigoPanel() {
+    if (!isSyndigo()) return;
+    var activeBtn = document.querySelector('.syndigo-rail-btn.is-active[data-syndigo-panel]');
+    if (!activeBtn) return;
+    if (typeof positionSyndigoPanel === 'function') {
+      positionSyndigoPanel(activeBtn.getAttribute('data-syndigo-panel'), activeBtn);
+    }
+  }
+
+  function observeFilterPanel() {
+    var panel = document.getElementById('filtersPanel');
+    if (!panel || panel.dataset.syndigoObserved === 'true') return;
+    panel.dataset.syndigoObserved = 'true';
+    var observer = new MutationObserver(function(){
+      if (window.__syndigoLayoutPinApplying || !isSyndigo()) return;
+      hardPinSyndigoLayout();
+    });
+    observer.observe(panel, {attributes: true, attributeFilter: ['style', 'class', 'hidden']});
+  }
+
+  function init() {
+    hardPinSyndigoLayout();
+    observeFilterPanel();
+    window.addEventListener('resize', function(){
+      hardPinSyndigoLayout();
+      positionActiveSyndigoPanel();
+    });
+    setTimeout(hardPinSyndigoLayout, 0);
+    setTimeout(hardPinSyndigoLayout, 120);
+    setTimeout(positionActiveSyndigoPanel, 0);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+
+<script id="syndigo-upload-trigger-fix-v9">
+(function () {
+  function initSyndigoUploadFix() {
+    var excelInput = document.getElementById('excelFile');
+    if (!excelInput) return;
+
+    function isSyndigoTheme() {
+      return (document.body.getAttribute('data-theme') || '') === 'syndigo';
+    }
+
+    function openExcelPicker() {
+      excelInput.value = '';
+      try {
+        if (typeof excelInput.showPicker === 'function') {
+          excelInput.showPicker();
+          return;
+        }
+      } catch (err) {}
+      excelInput.click();
+    }
+
+    document.addEventListener('click', function (e) {
+      var railFileButton = e.target.closest('[data-syndigo-panel="file"]');
+      var popoutFileAction = e.target.closest('.syndigo-popout-action[for="excelFile"]');
+      var emptyStateAction = e.target.closest('label[for="excelFile"]');
+
+      if (isSyndigoTheme() && (railFileButton || popoutFileAction)) {
+        e.preventDefault();
+        e.stopPropagation();
+        openExcelPicker();
+        return;
+      }
+
+      if (!isSyndigoTheme() && emptyStateAction) {
+        excelInput.value = '';
+      }
+    }, true);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSyndigoUploadFix);
+  } else {
+    initSyndigoUploadFix();
+  }
 })();
 </script>
 
